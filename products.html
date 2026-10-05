@@ -7,7 +7,7 @@
   <title>Products | Achar &mdash; Specialty Pickle &amp; Homemade Preserve Store</title>
   <meta name="description"
     content="Browse Achar by category: mango, mixed vegetable, spicy, sweet murabba, amla and lemon preserves, plus chutney and pickle masala.">
-  <link rel="icon" href="images/logo.png">
+  <link rel="icon" href="images/logo.svg">
   <script src="tailwind.js"></script>
   <script>
     tailwind.config = {
@@ -81,27 +81,27 @@
 
   <main>
     <!-- ============ 1. HERO (full-bleed bg image) ============ -->
-    <section class="relative isolate flex min-h-[540px] items-center overflow-hidden bg-brand-deep sm:min-h-[620px] lg:min-h-[700px]">
-      <img src="images/hero-pickles.jpg" alt="" aria-hidden="true" width="1200" height="900"
+<section class="relative isolate flex min-h-[320px] items-center overflow-hidden bg-brand-deep sm:min-h-[360px] lg:min-h-[400px]">
+      <img src="images/hero-grocery-store.jpg" alt="" aria-hidden="true" width="1920" height="1080"
         class="absolute inset-0 -z-20 h-full w-full object-cover" />
       <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-deep/90 via-brand-deep/75 to-black/90"></div>
 
-      <div class="mx-auto w-full max-w-4xl px-5 py-28 text-center sm:px-6 sm:py-32 lg:py-36">
+      <div class="mx-auto w-full max-w-4xl px-5 py-14 text-center sm:px-6 sm:py-16 lg:py-20">
         <span class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 font-sans text-[10px] font-bold uppercase tracking-[0.24em] text-amber-200 backdrop-blur">
           <i class="bi bi-basket2"></i> Twelve jars &middot; Six families
         </span>
 
-        <h1 class="mt-7 font-serif text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">
+<h1 class="mt-5 font-serif text-3xl font-bold leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-5xl">
           Pickles, sorted by<br /><span class="italic text-amber-300">category</span>
         </h1>
 
-        <p class="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+        <p class="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
           Twelve jars, grouped the way a kitchen groups them. Mango, mixed vegetable,
           spicy, sweet, amla and chutney &mdash; every one fermented in brass and packed
           by hand.
         </p>
 
-        <div class="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4">
+        <div class="mt-7 flex flex-wrap justify-center gap-3 sm:gap-4">
           <a href="#pFilter"
             class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand-deep transition hover:-translate-y-0.5 hover:bg-amber-300">
             Browse the jars <i class="bi bi-arrow-down"></i>
@@ -154,11 +154,13 @@
         <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="pGrid">
 
           <article data-cat="mango"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-mango.jpg" alt="Jar of Achar mango pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="absolute" aria-hidden="true"></span>
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Bestseller</span>
-            <img src="images/pickle-mango.jpg" alt="Jar of Achar mango pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Mango</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Mango Pickle (Aam Achar)</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Chunky Ratnagiri raw mango in a light hing and fennel brine. The jar our family is known for.</p>
@@ -169,13 +171,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;180<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="mango"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-mango-garam.jpg" alt="Jar of Achar garam mango pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Winter Special</span>
-            <img src="images/pickle-mango-garam.png" alt="Jar of Achar garam mango pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Mango</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Garam Mango Pickle</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Roasted cumin and black salt over ripe chunks. Sweeter, sharper, built for winter.</p>
@@ -186,13 +191,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;205<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="mixed-veg"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-mixed-veg.jpg" alt="Jar of Achar mixed vegetable pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">House Favourite</span>
-            <img src="images/pickle-mixed-veg.jpg" alt="Jar of Achar mixed vegetable pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Mixed Veg</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Mixed Veg Pickle</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Cauliflower, cabbage, gourd and carrot with mustard seeds and a warm red-chilli masala.</p>
@@ -203,13 +211,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;210<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="mixed-veg"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-mixed-veg-shatta.jpg" alt="Jar of Achar shatta mixed vegetable pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Punjab Classic</span>
-            <img src="images/pickle-mixed-veg-shatta.png" alt="Jar of Achar shatta mixed vegetable pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Mixed Veg</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Shatta Mixed Veg</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Deseeded peppers, sesame and aniseed. Bold, Punjabi-style, faintly smoky.</p>
@@ -220,13 +231,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;235<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="spicy"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-spicy.jpg" alt="Jar of Achar spicy red chilli pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Hot</span>
-            <img src="images/pickle-spicy.jpg" alt="Jar of Achar spicy red chilli pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Spicy</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Spicy Red Chilli Pickle</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Ghar-resham chilli crushed coarse with garlic and sesame oil. Serious heat, balanced.</p>
@@ -237,13 +251,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;240<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">250 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="spicy"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-spicy-lehsun.jpg" alt="Jar of Achar garlic pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Chef's Pick</span>
-            <img src="images/pickle-spicy-lehsun.png" alt="Jar of Achar garlic pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Spicy</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Garlic (Lehsun) Pickle</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Peeled garlic in a red-chilli and sesame paste. Sharp, garlicky, endlessly repeatable.</p>
@@ -254,13 +271,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;255<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">250 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="sweet"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-sweet.jpg" alt="Jar of Achar sweet mango murabba" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">No Heat</span>
-            <img src="images/pickle-sweet.jpg" alt="Jar of Achar sweet mango murabba" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Sweet</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Sweet Mango Murabba</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Khatta-meetha preserve slow-cooked in sugar and cardamom. Keeps a full year on the shelf.</p>
@@ -271,13 +291,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;260<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="sweet"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-sweet-imli.jpg" alt="Jar of Achar sweet imli pickle" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Tangy</span>
-            <img src="images/pickle-sweet-imli.png" alt="Jar of Achar sweet imli pickle" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Sweet</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Imli Sweet Pickle</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Young tamarind in jaggery and ginger. The one children finish first.</p>
@@ -288,13 +311,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;225<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="amla"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-amla.jpg" alt="Jar of Achar amla and lemon preserve" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Healthy</span>
-            <img src="images/pickle-amla.jpg" alt="Jar of Achar amla and lemon preserve" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Amla &amp; Lemon</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Amla &amp; Lemon Preserve</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Iron-rich amla with hand-squeezed lemon and a pinch of jaggery. The winter family tonic.</p>
@@ -305,13 +331,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;195<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="amla"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-amla-honey.jpg" alt="Jar of Achar amla and honey preserve" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">New Batch</span>
-            <img src="images/pickle-amla-honey.png" alt="Jar of Achar amla and honey preserve" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Amla &amp; Lemon</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Amla Honey Preserve</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Amla and Sidhi raw honey, no sugar. Mild, herbal, made for the health shelf.</p>
@@ -322,13 +351,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;275<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="chutney"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-chutney.jpg" alt="Pouch of Achar chutney and pickle masala mix" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Everyday</span>
-            <img src="images/pickle-chutney.jpg" alt="Pouch of Achar chutney and pickle masala mix" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Chutney &amp; Masala</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Chutney &amp; Pickle Mix</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Our grind masala blended fresh &mdash; ready for chutney, bhuna or a quick homemade pickle.</p>
@@ -339,13 +371,16 @@
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;120<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">200 g pouch</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
             </div>
+            </div>
           </article>
 
           <article data-cat="chutney"
-            class="p-card group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            class="p-card overflow-hidden group flex scroll-mt-32 flex-col rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/pickle-chutney-pudina.jpg" alt="Jar of Achar pudina chutney" width="1200" height="900" loading="lazy"
+              class="aspect-[4/3] w-full shrink-0 object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
             <span class="self-start rounded-full border border-brand/20 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:border-white/15 dark:text-red-300">Fresh</span>
-            <img src="images/pickle-chutney-pudina.png" alt="Jar of Achar pudina chutney" width="900" height="900" loading="lazy"
-              class="mx-auto mt-4 aspect-square w-32 rounded-2xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            
             <p class="mt-4 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Chutney &amp; Masala</p>
             <h2 class="mt-1 font-serif text-xl font-bold leading-snug dark:text-white">Pudina Chutney</h2>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Mint, green chilli and roasted cumin, ground coarse. Made fresh on Saturdays only.</p>
@@ -355,6 +390,7 @@
             <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
               <span class="font-serif text-xl font-bold dark:text-white">&#8377;145<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">200 g jar</small></span>
               <a href="contact.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition hover:gap-2.5 hover:text-brand-soft dark:hover:text-red-300">Order <i class="bi bi-arrow-right"></i></a>
+            </div>
             </div>
           </article>
 

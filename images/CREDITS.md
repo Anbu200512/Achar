@@ -7,14 +7,21 @@ They have been cropped and resized for the layout. Attribution details below.
 The logo (`logo.svg` and the `logo.png` rendered from it) is original artwork for
 this project and carries no third-party licence.
 
-- `hero-pickles.jpg` - à¦ªà¦¾à¦ªà§°à¦¿ à¦¬à§°à¦¾ - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=186098425>
+- `hero-pickles.jpg` - পাপৰি বৰা - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=186098425>
 - `pickle-mango.jpg` - Suyash.dwivedi - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=89589329>
 - `pickle-mixed-veg.jpg` - Pinakpani - CC BY-SA 4.0 - <https://commons.wikimedia.org/wiki/File:Varities_Achars_in_a_local_fair_in_India_03.jpg>
 - `pickle-spicy.jpg` - Keerthiga - CC BY-SA 4.0 - <https://commons.wikimedia.org/wiki/File:Green_chilli_pickle.jpg>
 - `pickle-sweet.jpg` - Muddu 2 - CC BY-SA 4.0 - <https://commons.wikimedia.org/wiki/File:Mango_Murabba_Homemade.jpg>
 - `pickle-amla.jpg` - Salil Kumar Mukherjee - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=156941416>
 - `pickle-chutney.jpg` - jennicatpink from Lechlade, United Kingdom - CC BY-SA 2.0 - <https://commons.wikimedia.org/wiki/File:Various_jarred_chutneys.jpg>
+- `pickle-mango-garam.jpg` - Sivahari - by-sa 3.0 - <https://commons.wikimedia.org/w/index.php?curid=27265373>
+- `pickle-mixed-veg-shatta.jpg` - Rameshng - by-sa 3.0 - <https://commons.wikimedia.org/w/index.php?curid=23818140>
+- `pickle-spicy-lehsun.jpg` - Miansari66 - CC0 - <https://commons.wikimedia.org/w/index.php?curid=26540250>
+- `pickle-sweet-imli.jpg` - Vis M - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=142674680>
+- `pickle-amla-honey.jpg` - Thamizhpparithi Maari - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=39848438>
+- `pickle-chutney-pudina.jpg` - Jaya.bhardwaj63 - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=40697756>
 - `recipe-aam-achar.jpg` - Adityamadhav83 - by-sa 3.0 - <https://commons.wikimedia.org/w/index.php?curid=25983509>
+- `recipe-aam-achar-process.jpg` - Lopanayak - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=102874829>
 - `recipe-paratha.jpg` - Barthateslisa - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=40955153>
 - `recipe-murabba.jpg` - Shaili Sharma - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=103594863>
 - `process-sourcing.jpg` - voltageek - by-sa 2.0 - <https://www.flickr.com/photos/70154544@N00/5106182102>
@@ -25,9 +32,15 @@ this project and carries no third-party licence.
 - `pantry-nimbu-amla.jpg` - Miansari66 - CC0 1.0 - <https://commons.wikimedia.org/w/index.php?curid=26954503>
 - `pantry-mirchi-hing.jpg` - Horia Varlan - by 2.0 - <https://www.flickr.com/photos/10361931@N06/4290550268>
 - `pantry-meetha.jpg` - Rocky Masum - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=149609914>
-- `team-ks.jpg` - Harvinder Chandigarh - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=176453985>
-- `team-ms.jpg` - grongar - by 2.0 - <https://www.flickr.com/photos/70757891@N00/6019667931>
-- `team-as.jpg` - D-Stanley - by 2.0 - <https://www.flickr.com/photos/79721788@N00/5731112692>
-- `team-rk.jpg` - Mohammad Anees Qamar - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=168186467>
+- `team-ks.jpg` - Steve Evans from Citizen of the World - by 2.0 - <https://commons.wikimedia.org/w/index.php?curid=25840832>
+- `team-ms.jpg` - Billjones94 - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=116151026>
+- `team-as.jpg` - Mishra12krati - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=162772259>
+- `team-rk.jpg` - McKay Savage from London, UK - by 2.0 - <https://commons.wikimedia.org/w/index.php?curid=23465181>
 - `store-front.jpg` - mckaysavage - by 2.0 - <https://www.flickr.com/photos/56796376@N00/3503774461>
-
+- `bulk-achar-bottles.jpg` - Rameshng - by-sa 3.0 - <https://commons.wikimedia.org/w/index.php?curid=23818084>
+- `hero-achar-assortment.jpg` - Biswarup Ganguly - CC BY 3.0 - <https://commons.wikimedia.org/w/index.php?curid=44386425>
+- `hero-pickle-jars.jpg` - Thejas Panarkandy - CC BY 2.0 - <https://commons.wikimedia.org/w/index.php?curid=112373926>
+- `hero-grocery-store.jpg` - Rajesh Dangi - by-sa 3.0 - <https://commons.wikimedia.org/w/index.php?curid=18189010>
+- `hero-mixed-pickles.jpg` - Daderot - CC0 - <https://commons.wikimedia.org/w/index.php?curid=99950288>
+- `hero-amla-achar.jpg` - Shavetaarora - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=102616717>
+- `hero-achar-variety.jpg` - HARIOM.AWASTHI - by-sa 4.0 - <https://commons.wikimedia.org/w/index.php?curid=40781884>
