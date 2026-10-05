@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Achar &mdash; Specialty Pickle &amp; Homemade Preserve Store</title>
+  <meta name="description"
+    content="Achar - a homely, traditional specialty pickle and homemade preserve store. Hand-fermented mango, mixed veg, spicy, sweet, amla and lemon preserves.">
+  <link rel="icon" href="images/logo.png">
+  <script src="tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#A31621',
+              deep: '#7A1218',
+              soft: '#D64530',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* RTL */
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    /* THEME TOGGLE */
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #a31621;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] thead {
+      background-color: #a31621 !important;
+    }
+
+    [data-theme="dark"] .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+  </style>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      const html = document.documentElement;
+      html.setAttribute('data-theme', savedTheme);
+      html.classList.toggle('dark', savedTheme === 'dark');
+    })();
+  </script>
+</head>
+
+<body class="font-sans bg-white text-brand dark:bg-black dark:text-white">
+  <!-- navbar -->
+  <div id="navbar"></div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="relative overflow-hidden bg-white pb-14 pt-28 sm:pt-32 lg:pb-20 lg:pt-40 dark:bg-black">
+      <div class="pointer-events-none absolute -start-24 top-10 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl"></div>
+      <div class="pointer-events-none absolute -end-24 top-24 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+
+          <div class="lg:col-span-7">
+            <span class="inline-flex items-center gap-2.5 font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">
+              <span class="h-px w-7 bg-current"></span>
+              Family Recipe &middot; Since 1948 &middot; Varanasi
+            </span>
+
+            <h1 class="mt-5 font-serif text-4xl font-bold leading-[1.06] tracking-tight text-brand sm:text-5xl lg:text-6xl dark:text-white">
+              Achar made the<br />
+              <span class="italic text-brand-soft dark:text-red-300">old-fashioned</span>
+              way
+            </h1>
+
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-neutral-700 sm:text-lg dark:text-neutral-300">
+              Hand-picked raw mango, stone-ground masala and slow sun-fermentation in
+              brass jars. No preservatives, no artificial colour &mdash; just the pickle
+              our family has been making for three generations.
+            </p>
+
+            <div class="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
+              <a href="products.html"
+                class="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:-translate-y-0.5 hover:bg-brand-soft dark:bg-brand dark:hover:bg-brand-soft">
+                Shop Signature Pickles <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="bulk-gifting.html"
+                class="inline-flex items-center gap-2 rounded-full border border-brand/25 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:-translate-y-0.5 hover:border-brand hover:bg-brand/5 dark:border-white/20 dark:text-white dark:hover:border-white/40 dark:hover:bg-white/5">
+                Bulk &amp; Gifting
+              </a>
+            </div>
+
+            <div class="mt-10 grid grid-cols-2 gap-5 border-t border-brand/15 pt-8 lg:grid-cols-4 dark:border-white/10">
+              <div class="flex items-start gap-2.5">
+                <i class="bi bi-shield-check text-lg text-brand-soft dark:text-red-300"></i>
+                <span class="font-sans text-[11px] font-semibold uppercase leading-relaxed tracking-[0.08em]">No preservatives or colour</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="bi bi-sun text-lg text-brand-soft dark:text-red-300"></i>
+                <span class="font-sans text-[11px] font-semibold uppercase leading-relaxed tracking-[0.08em]">Sun-fermented, never rushed</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="bi bi-basket2 text-lg text-brand-soft dark:text-red-300"></i>
+                <span class="font-sans text-[11px] font-semibold uppercase leading-relaxed tracking-[0.08em]">Small-batch &amp; hand-packed</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="bi bi-truck text-lg text-brand-soft dark:text-red-300"></i>
+                <span class="font-sans text-[11px] font-semibold uppercase leading-relaxed tracking-[0.08em]">Free delivery above &#8377;999</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="overflow-hidden rounded-3xl border border-brand/15 bg-white shadow-2xl shadow-brand/5 dark:border-white/10 dark:bg-neutral-900 dark:shadow-black/40">
+              <img src="images/hero-pickles.jpg" alt="Jars of Achar pickle on the shop counter" width="1200" height="900"
+                class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-105" />
+
+              <div class="flex flex-col items-center gap-4 px-6 py-6 sm:flex-row sm:justify-between sm:px-8">
+                <div class="text-center sm:text-start">
+                  <p class="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-neutral-500 dark:text-neutral-400">On the shelf today</p>
+                  <p class="mt-1.5 font-serif text-lg font-bold text-brand sm:text-xl dark:text-white">Mango &middot; Mixed Veg &middot; Spicy</p>
+                </div>
+                <span class="inline-flex shrink-0 items-center gap-2 rounded-full border border-dashed border-brand/25 bg-brand/[0.04] px-4 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-600 dark:border-white/20 dark:bg-white/5 dark:text-neutral-300">
+                  <i class="bi bi-hourglass-split text-brand-soft dark:text-red-300"></i>
+                  Batch No. 47
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VARIETIES STRIP ================= -->
+    <div class="overflow-hidden border-y border-brand/15 bg-brand/[0.03] py-3.5 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="flex w-max gap-8 sm:gap-12" id="hpMarquee">
+        <div class="flex shrink-0 items-center gap-8 font-sans text-[11px] font-bold uppercase tracking-[0.24em] text-neutral-700 sm:gap-12 dark:text-neutral-300">
+          <span>Raw Mango</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Mixed Veg</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Spicy Chilli</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Sweet Murabba</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Amla</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Lemon</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Chutney</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+          <span>Pickle Masala</span><span class="h-1.5 w-1.5 rounded-full bg-brand-soft"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SIGNATURE VARIETIES ================= -->
+    <section class="scroll-mt-28 bg-white py-16 sm:py-20 lg:py-28 dark:bg-black" id="varieties">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Signature Pickle Varieties</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-brand sm:text-4xl lg:text-[2.75rem] dark:text-white">Our best-loved jars</h2>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            Made in small batches every season, from produce picked at its right
+            maturity. Order by the jar &mdash; we pack and ship the same week.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
+
+          <article class="hp-reveal group relative flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60 dark:hover:shadow-black/50">
+            <span class="absolute top-4 z-10 rounded-full border border-brand/20 bg-white/85 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft backdrop-blur [inset-inline-end:1.25rem] dark:border-white/15 dark:bg-black/55 dark:text-red-300">Bestseller</span>
+            <img src="images/pickle-mango.jpg" alt="Achar mango pickle made from raw mango" width="900" height="900" loading="lazy"
+              class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-serif text-xl font-bold leading-snug text-brand dark:text-white">Mango Pickle (Aam)</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Chunky Ratnagiri raw mango in a light hing &amp; fennel brine. The pickle our family is known for.</p>
+              <div class="mt-4 flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="ms-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Mild</span>
+              </div>
+              <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+                <span class="font-serif text-xl font-bold text-brand dark:text-white">&#8377;180<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
+                <a href="products.html#mango" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">View <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-reveal group relative flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60 dark:hover:shadow-black/50">
+            <span class="absolute top-4 z-10 rounded-full border border-brand/20 bg-white/85 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft backdrop-blur [inset-inline-end:1.25rem] dark:border-white/15 dark:bg-black/55 dark:text-red-300">House Favourite</span>
+            <img src="images/pickle-mixed-veg.jpg" alt="Achar varieties of mixed vegetable pickle" width="900" height="900" loading="lazy"
+              class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-serif text-xl font-bold leading-snug text-brand dark:text-white">Mixed Veg Pickle</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Cauliflower, cabbage, gourd and carrot with mustard seeds and a warm red-chilli masala.</p>
+              <div class="mt-4 flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="ms-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Medium</span>
+              </div>
+              <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+                <span class="font-serif text-xl font-bold text-brand dark:text-white">&#8377;210<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
+                <a href="products.html#mixed-veg" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">View <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-reveal group relative flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60 dark:hover:shadow-black/50">
+            <span class="absolute top-4 z-10 rounded-full border border-brand/20 bg-white/85 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft backdrop-blur [inset-inline-end:1.25rem] dark:border-white/15 dark:bg-black/55 dark:text-red-300">Hot</span>
+            <img src="images/pickle-spicy.jpg" alt="Achar spicy green chilli pickle" width="900" height="900" loading="lazy"
+              class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-serif text-xl font-bold leading-snug text-brand dark:text-white">Spicy Red Chilli Pickle</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Ghar-resham chilli crushed coarse with garlic and sesame oil. Serious heat, properly balanced.</p>
+              <div class="mt-4 flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="ms-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Fiery</span>
+              </div>
+              <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+                <span class="font-serif text-xl font-bold text-brand dark:text-white">&#8377;240<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">250 g jar</small></span>
+                <a href="products.html#spicy" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">View <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-reveal group relative flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60 dark:hover:shadow-black/50">
+            <span class="absolute top-4 z-10 rounded-full border border-brand/20 bg-white/85 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft backdrop-blur [inset-inline-end:1.25rem] dark:border-white/15 dark:bg-black/55 dark:text-red-300">No Heat</span>
+            <img src="images/pickle-sweet.jpg" alt="Homemade sweet mango murabba preserve" width="900" height="900" loading="lazy"
+              class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-serif text-xl font-bold leading-snug text-brand dark:text-white">Sweet Mango Murabba</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Khatta-meetha preserve slow-cooked in sugar and cardamom. Keeps for a full year on the shelf.</p>
+              <div class="mt-4 flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="ms-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Mild</span>
+              </div>
+              <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+                <span class="font-serif text-xl font-bold text-brand dark:text-white">&#8377;260<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
+                <a href="products.html#sweet" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">View <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-reveal group relative flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60 dark:hover:shadow-black/50">
+            <span class="absolute top-4 z-10 rounded-full border border-brand/20 bg-white/85 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft backdrop-blur [inset-inline-end:1.25rem] dark:border-white/15 dark:bg-black/55 dark:text-red-300">Healthy</span>
+            <img src="images/pickle-amla.jpg" alt="Achar amla gooseberry pickle" width="900" height="900" loading="lazy"
+              class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-serif text-xl font-bold leading-snug text-brand dark:text-white">Amla &amp; Lemon Preserve</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Iron-rich amla with hand-squeezed lemon and a pinch of jaggery. The winter family tonic.</p>
+              <div class="mt-4 flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="ms-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Mild</span>
+              </div>
+              <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+                <span class="font-serif text-xl font-bold text-brand dark:text-white">&#8377;195<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">500 g jar</small></span>
+                <a href="products.html#amla" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">View <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-reveal group relative flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60 dark:hover:shadow-black/50">
+            <span class="absolute top-4 z-10 rounded-full border border-brand/20 bg-white/85 px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-brand-soft backdrop-blur [inset-inline-end:1.25rem] dark:border-white/15 dark:bg-black/55 dark:text-red-300">Everyday</span>
+            <img src="images/pickle-chutney.jpg" alt="Jars of Achar chutney and pickle masala mix" width="900" height="900" loading="lazy"
+              class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-serif text-xl font-bold leading-snug text-brand dark:text-white">Chutney &amp; Pickle Mix</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Our grind masala blended fresh &mdash; ready for chutney, bhuna or a quick homemade pickle.</p>
+              <div class="mt-4 flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-soft dark:bg-red-400"></span>
+                <span class="h-1.5 w-1.5 rounded-full border border-brand/40 dark:border-white/25"></span>
+                <span class="ms-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Pungent</span>
+              </div>
+              <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+                <span class="font-serif text-xl font-bold text-brand dark:text-white">&#8377;120<small class="block font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">200 g pouch</small></span>
+                <a href="products.html#chutney" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">View <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="products.html"
+            class="inline-flex items-center gap-2 rounded-full border border-brand/25 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:border-brand hover:bg-brand/5 dark:border-white/20 dark:text-white dark:hover:border-white/40 dark:hover:bg-white/5">
+            View all products <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT'S MADE ================= -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-28 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+        <div class="max-w-2xl">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Ghar Ka Tarika</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-brand sm:text-4xl lg:text-[2.75rem] dark:text-white">How the jar is made</h2>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            Four patient steps, the same way it has been done in our kitchen since
+            1948. Nothing is hurried, and nothing is short-cut.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
+          <div class="hp-reveal border-t-2 border-brand/20 pt-6 dark:border-white/15">
+            <span class="font-serif text-sm font-bold tracking-[0.1em] text-brand-soft dark:text-red-300">01</span>
+            <img src="images/process-sourcing.jpg" alt="Green raw mangoes freshly picked for pickling" width="900" height="600" loading="lazy"
+              class="mt-4 aspect-[3/2] w-full rounded-xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Seasonal sourcing</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Raw mangoes from Ratnagiri and UP orchards, picked green and firm at the right maturity.</p>
+          </div>
+          <div class="hp-reveal border-t-2 border-brand/20 pt-6 dark:border-white/15">
+            <span class="font-serif text-sm font-bold tracking-[0.1em] text-brand-soft dark:text-red-300">02</span>
+            <img src="images/process-grinding.jpg" alt="Spices being stone-ground on a traditional batan" width="900" height="600" loading="lazy"
+              class="mt-4 aspect-[3/2] w-full rounded-xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Stone-ground masala</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Ghar-resham chilli, turmeric, fennel and mustard crushed fresh on stone, never powdered.</p>
+          </div>
+          <div class="hp-reveal border-t-2 border-brand/20 pt-6 dark:border-white/15">
+            <span class="font-serif text-sm font-bold tracking-[0.1em] text-brand-soft dark:text-red-300">03</span>
+            <img src="images/process-sundrying.jpg" alt="Sliced mangoes drying on cloth in the sun" width="900" height="600" loading="lazy"
+              class="mt-4 aspect-[3/2] w-full rounded-xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Sun-dried &amp; brined</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Three days in the sun with salt and mustard oil, until the mango loses its sharpness.</p>
+          </div>
+          <div class="hp-reveal border-t-2 border-brand/20 pt-6 dark:border-white/15">
+            <span class="font-serif text-sm font-bold tracking-[0.1em] text-brand-soft dark:text-red-300">04</span>
+            <img src="images/process-fermenting.jpg" alt="Raw mango pieces marinating in mustard oil inside a glass jar" width="900" height="600" loading="lazy"
+              class="mt-4 aspect-[3/2] w-full rounded-xl object-cover ring-1 ring-brand/15 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Slow fermentation</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Resting in brass jars for weeks until the masala settles and the pickle finds its depth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY OUR PICKLE ================= -->
+    <section class="bg-white py-16 sm:py-20 lg:py-28 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+
+          <div class="hp-reveal lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Why Our Pickle</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-brand sm:text-4xl dark:text-white">Made the way it was always made</h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              A jar from our shelves should taste like a kitchen, not a factory.
+              That is the whole idea.
+            </p>
+            <a href="about.html"
+              class="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:-translate-y-0.5 hover:bg-brand-soft dark:bg-brand dark:hover:bg-brand-soft">
+              Read our story <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="grid gap-8 sm:grid-cols-2 lg:col-span-7">
+            <div class="hp-reveal flex items-start gap-4">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-shield-check"></i></span>
+              <div>
+                <h3 class="font-serif text-lg font-bold leading-snug text-brand dark:text-white">Nothing artificial</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">No preservatives, no colour, no vinegar. Salt, oil and time do the work.</p>
+              </div>
+            </div>
+            <div class="hp-reveal flex items-start gap-4">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-cup-hot"></i></span>
+              <div>
+                <h3 class="font-serif text-lg font-bold leading-snug text-brand dark:text-white">Brass jar aged</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Fermented in traditional brass and wood, the way it was done on the stove.</p>
+              </div>
+            </div>
+            <div class="hp-reveal flex items-start gap-4">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-people"></i></span>
+              <div>
+                <h3 class="font-serif text-lg font-bold leading-snug text-brand dark:text-white">Three generations</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">The same family masala, handed down and never written down.</p>
+              </div>
+            </div>
+            <div class="hp-reveal flex items-start gap-4">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-basket2"></i></span>
+              <div>
+                <h3 class="font-serif text-lg font-bold leading-snug text-brand dark:text-white">Batches of 40 jars</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Small batches, hand-packed and labelled by hand. Never mass produced.</p>
+              </div>
+            </div>
+            <div class="hp-reveal flex items-start gap-4">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-patch-check"></i></span>
+              <div>
+                <h3 class="font-serif text-lg font-bold leading-snug text-brand dark:text-white">Best-before honoured</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Long natural shelf life &mdash; murabba keeps a full year in a clean jar.</p>
+              </div>
+            </div>
+            <div class="hp-reveal flex items-start gap-4">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-truck"></i></span>
+              <div>
+                <h3 class="font-serif text-lg font-bold leading-snug text-brand dark:text-white">Packed to travel</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Leak-proof glass, oil-sealed tops, shipping across India and beyond.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BULK & GIFTING ================= -->
+    <section class="bg-brand py-16 text-white sm:py-20 lg:py-28 dark:bg-brand-deep">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+
+          <div class="hp-reveal lg:col-span-7">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-300">Bulk &amp; Gifting</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[2.75rem]">Festive hampers, wedding favours &amp; corporate gifts</h2>
+            <p class="mt-4 max-w-2xl text-base leading-relaxed text-white/90">
+              We hand-pack festive pickle hampers for Diwali, wedding season and
+              corporate gifting &mdash; with your label on the jar if you want it.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="flex items-center gap-3">
+                <i class="bi bi-check-circle text-amber-300"></i>
+                <span class="text-sm font-semibold">Bulk pricing from 25 jars</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="bi bi-check-circle text-amber-300"></i>
+                <span class="text-sm font-semibold">Custom labels &amp; gift boxes</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="bi bi-check-circle text-amber-300"></i>
+                <span class="text-sm font-semibold">Wedding return favours</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="bi bi-check-circle text-amber-300"></i>
+                <span class="text-sm font-semibold">Pan-India &amp; export shipping</span>
+              </div>
+            </div>
+
+            <a href="bulk-gifting.html"
+              class="mt-10 inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:-translate-y-0.5 hover:bg-amber-300 hover:text-brand-deep">
+              Explore Bulk &amp; Gifting <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+<div class="hp-reveal lg:col-span-5">
+              <div class="rounded-3xl border border-white/25 bg-white/10 p-8 sm:p-10">
+                <p class="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-amber-300">Hamper No. 3 &mdash; The Festive Box</p>
+                <p class="mt-3 font-serif text-2xl font-bold">Six jars, one wooden crate</p>
+                <ul class="mt-6 space-y-4 text-sm font-medium">
+                  <li class="flex items-center gap-3"><i class="bi bi-jar-fill text-amber-300"></i> Mango &amp; Mixed Veg pickle</li>
+                  <li class="flex items-center gap-3"><i class="bi bi-jar-fill text-amber-300"></i> Spicy chilli &amp; sweet murabba</li>
+                  <li class="flex items-center gap-3"><i class="bi bi-jar-fill text-amber-300"></i> Amla &amp; lemon preserve</li>
+                  <li class="flex items-center gap-3"><i class="bi bi-gift text-amber-300"></i> Handwritten card, free of charge</li>
+                </ul>
+                <p class="mt-8 font-serif text-3xl font-bold text-amber-300">&#8377;1,450</p>
+                <p class="mt-1 text-xs text-white/80">Ships in 2 days &middot; Free delivery</p>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FROM OUR KITCHEN ================= -->
+    <section class="bg-white py-16 sm:py-20 lg:py-28 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">From Our Kitchen</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-brand sm:text-4xl dark:text-white">Recipes &amp; ways to eat it</h2>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            How to make aam ka achar at home, and the everyday ways our customers
+            serve it at the table.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
+          <article class="hp-reveal group flex flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/recipe-aam-achar.jpg" alt="Ghar ka aam ka achar recipe" width="900" height="700" loading="lazy"
+              class="aspect-[9/7] w-full rounded-xl object-cover ring-1 ring-brand/15 transition duration-500 group-hover:scale-105 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Ghar ka aam ka achar</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">The full raw-mango recipe with timings, oil ratios and the resting schedule.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+              <span class="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">12 min read</span>
+              <a href="recipes.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">Read <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="hp-reveal group flex flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/recipe-paratha.jpg" alt="Achar paratha with dahi" width="900" height="700" loading="lazy"
+              class="aspect-[9/7] w-full rounded-xl object-cover ring-1 ring-brand/15 transition duration-500 group-hover:scale-105 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Achar paratha &amp; dahi</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">The classic winter breakfast: flaky parathas, thick curd and a spoonful of mango pickle.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+              <span class="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">8 min read</span>
+              <a href="recipes.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">Read <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="hp-reveal group flex flex-col rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-red-400/60">
+            <img src="images/recipe-murabba.jpg" alt="Khatta meetha mango murabba" width="900" height="700" loading="lazy"
+              class="aspect-[9/7] w-full rounded-xl object-cover ring-1 ring-brand/15 transition duration-500 group-hover:scale-105 dark:ring-white/10" />
+            <h3 class="mt-5 font-serif text-xl font-bold leading-snug text-brand dark:text-white">Khatta-meetha murabba</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Cooking a summer-preserved murabba at home, with a spoon test that always works.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-brand/15 pt-4 dark:border-white/10">
+              <span class="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">15 min read</span>
+              <a href="recipes.html" class="inline-flex items-center gap-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand transition hover:gap-2.5 hover:text-brand-soft dark:text-white dark:hover:text-red-300">Read <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-28 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">From Our Customers</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-brand sm:text-4xl dark:text-white">What families say</h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:mt-14 lg:grid-cols-3">
+          <figure class="hp-reveal group flex flex-col gap-5 rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-quote text-2xl text-amber-600 dark:text-amber-400"></i>
+            <blockquote class="flex-1 font-serif text-lg italic leading-relaxed text-neutral-800 dark:text-neutral-200">
+              &ldquo;After thirty years in Pune, the mango pickle from this shop is the
+              closest thing to my grandmother's kitchen I have found.&rdquo;
+            </blockquote>
+            <figcaption class="flex items-center gap-3 border-t border-brand/15 pt-5 dark:border-white/10">
+              <span class="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 font-serif font-bold text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300">RS</span>
+              <span>
+                <span class="block font-serif text-base font-bold text-brand dark:text-white">Rohit Sharma</span>
+                <span class="block font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Pune &middot; Orders monthly</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="hp-reveal group flex flex-col gap-5 rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-quote text-2xl text-amber-600 dark:text-amber-400"></i>
+            <blockquote class="flex-1 font-serif text-lg italic leading-relaxed text-neutral-800 dark:text-neutral-200">
+              &ldquo;We ordered 60 jars as wedding favours. Every single guest asked
+              where they were from.&rdquo;
+            </blockquote>
+            <figcaption class="flex items-center gap-3 border-t border-brand/15 pt-5 dark:border-white/10">
+              <span class="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 font-serif font-bold text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300">PN</span>
+              <span>
+                <span class="block font-serif text-base font-bold text-brand dark:text-white">Priya Nair</span>
+                <span class="block font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Bengaluru &middot; Bulk order</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="hp-reveal group flex flex-col gap-5 rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-quote text-2xl text-amber-600 dark:text-amber-400"></i>
+            <blockquote class="flex-1 font-serif text-lg italic leading-relaxed text-neutral-800 dark:text-neutral-200">
+              &ldquo;No vinegar, no colour, nothing weird. My kids finished the whole jar
+              with plain rice.&rdquo;
+            </blockquote>
+            <figcaption class="flex items-center gap-3 border-t border-brand/15 pt-5 dark:border-white/10">
+              <span class="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-brand/20 bg-brand/5 font-serif font-bold text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300">AK</span>
+              <span>
+                <span class="block font-serif text-base font-bold text-brand dark:text-white">Amit Kulkarni</span>
+                <span class="block font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">Mumbai &middot; Spicy chilli fan</span>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISIT + PICKLE CLUB ================= -->
+    <section class="bg-white py-16 sm:py-20 lg:py-28 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+
+          <div class="hp-reveal lg:col-span-6">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Visit The Store</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-brand sm:text-4xl dark:text-white">Come and taste before you buy</h2>
+            <p class="mt-4 max-w-xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Walk in, smell the masala and taste a spoonful of each jar. Our counter
+              is open through the week &mdash; we will happily guide you.
+            </p>
+
+            <div class="mt-10 grid gap-8 sm:grid-cols-2">
+              <div class="flex items-start gap-3">
+                <i class="bi bi-geo-alt mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <span class="block font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Address</span>
+                  <p class="mt-1 text-sm font-medium leading-relaxed text-neutral-700 dark:text-neutral-300">Shop 14, Gandhi Market,<br />Varanasi, Uttar Pradesh 221001</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="bi bi-clock mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <span class="block font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Open Hours</span>
+                  <p class="mt-1 text-sm font-medium leading-relaxed text-neutral-700 dark:text-neutral-300">Mon - Sat: 9:00 AM - 8:00 PM<br />Sunday: 10:00 AM - 5:00 PM</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="bi bi-telephone mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <span class="block font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Phone &amp; WhatsApp</span>
+                  <p class="mt-1 text-sm font-medium leading-relaxed text-neutral-700 dark:text-neutral-300">+91 98765 43210</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="bi bi-envelope mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <span class="block font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Email</span>
+                  <p class="mt-1 text-sm font-medium leading-relaxed text-neutral-700 dark:text-neutral-300">hello@acharstore.in</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html"
+              class="mt-10 inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:-translate-y-0.5 hover:bg-brand-soft dark:bg-brand dark:hover:bg-brand-soft">
+              Contact &amp; enquiry <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="hp-reveal rounded-2xl border border-brand/15 bg-white p-7 shadow-2xl shadow-brand/5 sm:p-10 dark:border-white/10 dark:bg-neutral-900 dark:shadow-black/40">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-brand/20 bg-brand/5 text-brand-soft dark:border-white/15 dark:bg-white/5 dark:text-red-300"><i class="bi bi-whatsapp"></i></span>
+              <h3 class="mt-5 font-serif text-2xl font-bold text-brand dark:text-white">Join the Pickle Club</h3>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Leave your number and we will send the season's batch list, new arrivals
+                and the odd family recipe on WhatsApp. No spam, only pickle news.
+              </p>
+
+              <form class="mt-7" id="hpClubForm" novalidate>
+                <div class="flex flex-col gap-3 sm:flex-row">
+                  <input id="hpClubPhone" type="tel" name="phone" placeholder="Your WhatsApp number" aria-label="WhatsApp number"
+                    class="w-full rounded-full border border-brand/20 bg-white px-5 py-3.5 font-sans text-sm text-brand outline-none transition placeholder:text-neutral-400 focus:border-brand-soft dark:border-white/15 dark:bg-neutral-950 dark:text-white" required />
+                  <button type="submit"
+                    class="shrink-0 rounded-full bg-brand px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-brand-soft dark:bg-brand dark:hover:bg-brand-soft">
+                    Send me the list
+                  </button>
+                </div>
+                <p id="hpClubNote" class="mt-4 hidden font-sans text-xs font-medium text-brand-soft dark:text-red-300">
+                  Thank you! We will add you to this season's batch list.
+                </p>
+              </form>
+
+              <div class="mt-9 grid grid-cols-3 gap-4 border-t border-brand/15 pt-8 text-center dark:border-white/10">
+                <div>
+                  <p class="font-serif text-3xl font-bold text-brand dark:text-white">76</p>
+                  <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">Years</p>
+                </div>
+                <div>
+                  <p class="font-serif text-3xl font-bold text-brand dark:text-white">40</p>
+                  <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">Jars a batch</p>
+                </div>
+                <div>
+                  <p class="font-serif text-3xl font-bold text-brand dark:text-white">9</p>
+                  <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">Cities shipped</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script>
+    if (typeof lucide !== 'undefined' && lucide.createIcons) {
+      lucide.createIcons();
+    }
+  </script>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+
+  <script>
+    // ================= HOME PAGE =================
+    (function () {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // --- Scroll reveal (styles applied from JS, so nothing hides if JS is off) ---
+      const revealEls = document.querySelectorAll(".hp-reveal");
+
+      if (revealEls.length && !reduceMotion) {
+        revealEls.forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(24px)";
+          el.style.transition = "opacity .7s ease, transform .7s ease";
+          el.style.willChange = "opacity, transform";
+        });
+
+        const show = (el) => {
+          el.style.opacity = "1";
+          el.style.transform = "none";
+        };
+
+        if ("IntersectionObserver" in window) {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+              if (!entry.isIntersecting) return;
+              setTimeout(() => show(entry.target), i * 70);
+              io.unobserve(entry.target);
+            });
+          }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+
+          revealEls.forEach((el) => io.observe(el));
+        } else {
+          revealEls.forEach(show);
+        }
+      }
+
+      // --- Varieties strip: seamless loop via Web Animations API ---
+      const track = document.getElementById("hpMarquee");
+
+      if (track && !reduceMotion) {
+        const group = track.firstElementChild;
+
+        const run = () => {
+          const width = group.getBoundingClientRect().width;
+          if (!width) return;
+          track.getAnimations().forEach((a) => a.cancel());
+          track.animate(
+            [{ transform: "translateX(0)" }, { transform: `translateX(-${width}px)` }],
+            { duration: Math.max(18000, width * 55), iterations: Infinity, easing: "linear" }
+          );
+        };
+
+        track.appendChild(group.cloneNode(true));
+        run();
+        window.addEventListener("resize", run);
+      }
+
+      // --- Pickle Club form (front-end only, no backend) ---
+      const form = document.getElementById("hpClubForm");
+      const note = document.getElementById("hpClubNote");
+      const phone = document.getElementById("hpClubPhone");
+
+      form?.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const value = (phone?.value || "").trim();
+
+        if (!/^[+\d][\d\s\-()]{7,}$/.test(value)) {
+          if (phone) {
+            phone.focus();
+            phone.classList.add("border-brand-soft");
+            phone.setAttribute("aria-invalid", "true");
+          }
+          return;
+        }
+
+        if (phone) {
+          phone.value = "";
+          phone.classList.remove("border-brand-soft");
+          phone.removeAttribute("aria-invalid");
+        }
+        note?.classList.remove("hidden");
+      });
+
+      // --- Graceful fallback if an image is missing ---
+      document.querySelectorAll("img[src^='images/']").forEach((img) => {
+        img.addEventListener("error", () => {
+          img.classList.add("opacity-0");
+          const box = img.parentElement;
+          if (box) box.classList.add("bg-neutral-100", "dark:bg-neutral-800");
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>

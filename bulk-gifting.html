@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk &amp; Gifting | Achar &mdash; Specialty Pickle &amp; Homemade Preserve Store</title>
+  <meta name="description"
+    content="Festive pickle hampers, corporate gifting, wedding favours and wholesale supply. Custom labelling, bulk pricing from 25 jars.">
+  <link rel="icon" href="images/logo.png">
+  <script src="tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#A31621',
+              deep: '#7A1218',
+              soft: '#D64530',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #a31621;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] thead {
+      background-color: #a31621 !important;
+    }
+  </style>
+  <script>
+    (function () {
+      const t = localStorage.getItem('theme') || 'light';
+      const html = document.documentElement;
+      html.setAttribute('data-theme', t);
+      html.classList.toggle('dark', t === 'dark');
+    })();
+  </script>
+</head>
+
+<body class="font-sans bg-white text-brand dark:bg-black dark:text-white">
+  <div id="navbar"></div>
+
+  <main>
+    <!-- ============ 1. HERO (full-bleed bg image) ============ -->
+    <section class="relative isolate flex min-h-[540px] items-center overflow-hidden bg-brand-deep sm:min-h-[620px] lg:min-h-[700px]">
+      <img src="images/hero-pickles.jpg" alt="" aria-hidden="true" width="1200" height="900"
+        class="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-deep/90 via-brand-deep/75 to-black/90"></div>
+
+      <div class="mx-auto w-full max-w-4xl px-5 py-28 text-center sm:px-6 sm:py-32 lg:py-36">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 font-sans text-[10px] font-bold uppercase tracking-[0.24em] text-amber-200 backdrop-blur">
+          <i class="bi bi-gift"></i> Hampers &middot; Favours &middot; Crates
+        </span>
+
+        <h1 class="mt-7 font-serif text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Hampers, favours and<br /><span class="italic text-amber-300">whole-crate orders</span>
+        </h1>
+
+        <p class="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+          Diwali hampers, wedding return favours, employee gifting and shop restocking
+          &mdash; packed by the same four people who make the jars. Book ten days ahead
+          and we will handle the labelling, the cards and the delivery.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4">
+          <a href="#enquiry"
+            class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand-deep transition hover:-translate-y-0.5 hover:bg-amber-300">
+            Start an enquiry <i class="bi bi-arrow-down"></i>
+          </a>
+          <a href="tel:+919876543210"
+            class="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white/10">
+            <i class="bi bi-telephone"></i> +91 98765 43210
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. HAMPER COLLECTION ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-28 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">The collection</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Three hampers, ready to send
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            Each box is assembled to order, so we can swap any jar for a milder or
+            hotter version at no extra cost.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="group flex flex-col rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <h3 class="font-serif text-2xl font-bold dark:text-white">The Small Box</h3>
+            <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Four 250 g jars</p>
+            <p class="mt-6 font-serif text-4xl font-bold dark:text-white">&#8377;950</p>
+            <ul class="mt-6 flex-1 space-y-3">
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Mango &amp; mixed veg</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Sweet murabba</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Amla preserve</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Kraft box, handwritten card</li>
+            </ul>
+            <a href="#enquiry"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand/25 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:border-brand hover:bg-brand/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5">Enquire</a>
+          </article>
+
+          <article class="group relative flex flex-col rounded-2xl border-2 border-brand bg-white p-7 shadow-2xl shadow-brand/15 transition duration-300 hover:-translate-y-1.5 hover:shadow-brand/30 dark:bg-neutral-900">
+            <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-white">Most ordered</span>
+            <h3 class="font-serif text-2xl font-bold dark:text-white">The Festive Box</h3>
+            <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Six jars in a wooden crate</p>
+            <p class="mt-6 font-serif text-4xl font-bold dark:text-white">&#8377;1,450</p>
+            <ul class="mt-6 flex-1 space-y-3">
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Mango, mixed veg &amp; shatta</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Spicy chilli &amp; sweet murabba</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Amla &amp; imli</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Crate, silk wrap, two cards</li>
+            </ul>
+            <a href="#enquiry"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-brand-soft">Enquire</a>
+          </article>
+
+          <article class="group flex flex-col rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <h3 class="font-serif text-2xl font-bold dark:text-white">The Grand Crate</h3>
+            <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Twelve jars, two crates</p>
+            <p class="mt-6 font-serif text-4xl font-bold dark:text-white">&#8377;2,780</p>
+            <ul class="mt-6 flex-1 space-y-3">
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Full catalogue, both crates</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Custom printed labels</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Masala pouch &amp; recipe booklet</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft dark:text-red-300"></i>Free delivery across India</li>
+            </ul>
+            <a href="#enquiry"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand/25 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:border-brand hover:bg-brand/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5">Enquire</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. WHO WE SUPPLY ============ -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Who we supply</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              Four kinds of customer, one standard
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Whether it is twenty-five jars for a shop or five hundred for a wedding, the
+              masala is identical. Only the packaging changes.
+            </p>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:col-span-7">
+            <article class="group rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <i class="bi bi-shop text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+              <h3 class="mt-4 font-serif text-xl font-bold dark:text-white">Shops &amp; kirana stores</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Fifteen-day billing, slab pricing and a standing monthly order. We
+                deliver to Varanasi, Prayagraj and Lucknow at no cost.
+              </p>
+            </article>
+            <article class="group rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <i class="bi bi-building text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+              <h3 class="mt-4 font-serif text-xl font-bold dark:text-white">Companies &amp; offices</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Diwali desk hampers, new-joining kits and client gifts. Invoice with GST
+                and your logo on the label, delivered to one address.
+              </p>
+            </article>
+            <article class="group rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <i class="bi bi-heart text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+              <h3 class="mt-4 font-serif text-xl font-bold dark:text-white">Weddings &amp; events</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Return favours in kraft jars with a printed sleeve. We match the theme
+                colour you send us, usually within a week.
+              </p>
+            </article>
+            <article class="group rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <i class="bi bi-cup-hot text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+              <h3 class="mt-4 font-serif text-xl font-bold dark:text-white">Restaurants &amp; hotels</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Private-label pickle made to your spice tolerance and jar size, from one
+                hundred jars upwards.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. CUSTOMISATION ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-24 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Personalisation</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Make it yours, down to the label
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-lg text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300"><i class="bi bi-type"></i></span>
+            <h3 class="mt-5 font-serif text-lg font-bold dark:text-white">Your label</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Send artwork or just a name and phone number. We typeset it here.</p>
+          </div>
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-lg text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300"><i class="bi bi-fire"></i></span>
+            <h3 class="mt-5 font-serif text-lg font-bold dark:text-white">Your heat level</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Tell us who is eating it and we will set the chilli accordingly.</p>
+          </div>
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-lg text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300"><i class="bi bi-box2-heart"></i></span>
+            <h3 class="mt-5 font-serif text-lg font-bold dark:text-white">Your packaging</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Kraft, wooden crate or plain bulk carton, depending on the budget.</p>
+          </div>
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-lg text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300"><i class="bi bi-envelope-paper"></i></span>
+            <h3 class="mt-5 font-serif text-lg font-bold dark:text-white">Your message</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Handwritten or printed cards, written at the counter like they used to be.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. BULK PRICING ============ -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-4">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Slabs</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              Bulk pricing
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Rates are per 500 g jar and include GST. Freight is billed at actuals
+              above twenty-five jars.
+            </p>
+          </div>
+
+          <div class="overflow-x-auto rounded-2xl border border-brand/15 lg:col-span-8 dark:border-white/10">
+            <table class="w-full min-w-[32rem] border-collapse">
+              <thead>
+                <tr class="bg-brand text-white">
+                  <th class="px-5 py-4 text-start font-sans text-[11px] font-bold uppercase tracking-[0.14em]">Quantity</th>
+                  <th class="px-5 py-4 text-start font-sans text-[11px] font-bold uppercase tracking-[0.14em]">Mango / Mixed Veg</th>
+                  <th class="px-5 py-4 text-start font-sans text-[11px] font-bold uppercase tracking-[0.14em]">Spicy / Sweet</th>
+                  <th class="px-5 py-4 text-end font-sans text-[11px] font-bold uppercase tracking-[0.14em]">Discount</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-brand/10 dark:divide-white/10">
+                <tr class="bg-white transition duration-200 hover:bg-brand/[0.04] dark:bg-neutral-900 dark:hover:bg-white/5">
+                  <td class="px-5 py-4 text-sm font-medium dark:text-white">25 &ndash; 49 jars</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">&#8377;185</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">&#8377;215</td>
+                  <td class="px-5 py-4 text-end text-sm font-semibold dark:text-white">5%</td>
+                </tr>
+                <tr class="bg-white transition duration-200 hover:bg-brand/[0.04] dark:bg-neutral-900 dark:hover:bg-white/5">
+                  <td class="px-5 py-4 text-sm font-medium dark:text-white">50 &ndash; 99 jars</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">&#8377;175</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">&#8377;205</td>
+                  <td class="px-5 py-4 text-end text-sm font-semibold dark:text-white">10%</td>
+                </tr>
+                <tr class="bg-white transition duration-200 hover:bg-brand/[0.04] dark:bg-neutral-900 dark:hover:bg-white/5">
+                  <td class="px-5 py-4 text-sm font-medium dark:text-white">100 &ndash; 249 jars</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">&#8377;165</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">&#8377;195</td>
+                  <td class="px-5 py-4 text-end text-sm font-semibold dark:text-white">15%</td>
+                </tr>
+                <tr class="bg-white transition duration-200 hover:bg-brand/[0.04] dark:bg-neutral-900 dark:hover:bg-white/5">
+                  <td class="px-5 py-4 text-sm font-medium dark:text-white">250+ jars</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">Negotiated</td>
+                  <td class="px-5 py-4 text-sm text-neutral-600 dark:text-neutral-400">Negotiated</td>
+                  <td class="px-5 py-4 text-end text-sm font-semibold dark:text-white">Custom</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. ENQUIRY FORM ============ -->
+    <section class="scroll-mt-28 bg-white py-16 sm:py-20 lg:py-28 dark:bg-black" id="enquiry">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Enquiry</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              Tell us the occasion
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              We reply to every enquiry within one working day, with a written
+              quotation and an honest note on lead times.
+            </p>
+
+            <div class="mt-9 space-y-5">
+              <div class="flex items-start gap-3">
+                <i class="bi bi-clock mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Lead time</p>
+                  <p class="mt-1 text-sm text-neutral-700 dark:text-neutral-300">10 working days for festive season, 6 for weddings.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="bi bi-truck mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Delivery</p>
+                  <p class="mt-1 text-sm text-neutral-700 dark:text-neutral-300">Free above 25 jars. Same-day pickup from the shop.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="bi bi-patch-check mt-0.5 text-lg text-brand-soft dark:text-red-300"></i>
+                <div>
+                  <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Payment</p>
+                  <p class="mt-1 text-sm text-neutral-700 dark:text-neutral-300">50% advance to book a batch, balance on delivery. GST invoice.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form id="bulkForm" novalidate
+              class="rounded-3xl border border-brand/15 bg-white p-7 shadow-2xl shadow-brand/5 sm:p-10 dark:border-white/10 dark:bg-neutral-900">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="bName" class="block font-sans text-[11px] font-bold uppercase tracking-[0.16em]">Name</label>
+                  <input id="bName" name="name" type="text" placeholder="Your name"
+                    class="mt-2 w-full rounded-xl border border-brand/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-soft dark:border-white/15 dark:bg-neutral-950 dark:text-white" required />
+                </div>
+                <div>
+                  <label for="bPhone" class="block font-sans text-[11px] font-bold uppercase tracking-[0.16em]">Phone</label>
+                  <input id="bPhone" name="phone" type="tel" placeholder="+91 98765 43210"
+                    class="mt-2 w-full rounded-xl border border-brand/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-soft dark:border-white/15 dark:bg-neutral-950 dark:text-white" required />
+                </div>
+                <div>
+                  <label for="bEmail" class="block font-sans text-[11px] font-bold uppercase tracking-[0.16em]">Email</label>
+                  <input id="bEmail" name="email" type="email" placeholder="you@example.com"
+                    class="mt-2 w-full rounded-xl border border-brand/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-soft dark:border-white/15 dark:bg-neutral-950 dark:text-white" />
+                </div>
+                <div>
+                  <label for="bQty" class="block font-sans text-[11px] font-bold uppercase tracking-[0.16em]">Quantity</label>
+                  <select id="bQty" name="qty"
+                    class="mt-2 w-full rounded-xl border border-brand/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-soft dark:border-white/15 dark:bg-neutral-950 dark:text-white">
+                    <option>25 &ndash; 49 jars</option>
+                    <option>50 &ndash; 99 jars</option>
+                    <option>100 &ndash; 249 jars</option>
+                    <option>250+ jars</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="bMsg" class="block font-sans text-[11px] font-bold uppercase tracking-[0.16em]">What is the occasion?</label>
+                  <textarea id="bMsg" name="message" rows="4" placeholder="Diwali hampers for 80 staff, custom labels, delivery by the 20th"
+                    class="mt-2 w-full rounded-xl border border-brand/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-soft dark:border-white/15 dark:bg-neutral-950 dark:text-white"></textarea>
+                </div>
+              </div>
+
+              <button type="submit"
+                class="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-brand-soft">
+                Send enquiry <i class="bi bi-send"></i>
+              </button>
+              <p id="bulkNote" class="mt-4 hidden font-sans text-sm font-medium text-brand-soft dark:text-red-300">
+                Thank you. We will send a written quotation within one working day.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+  <script>
+    // ================= ENQUIRY FORM (front-end only) =================
+    (function () {
+      const form = document.getElementById("bulkForm");
+      const note = document.getElementById("bulkNote");
+      if (!form) return;
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = form.querySelector("#bName");
+        const phone = form.querySelector("#bPhone");
+
+        const nameOk = (name.value || "").trim().length > 1;
+        const phoneOk = /^[+\d][\d\s\-()]{7,}$/.test((phone.value || "").trim());
+
+        [name, phone].forEach((el) => el.classList.remove("border-brand-soft"));
+        if (!nameOk) name.classList.add("border-brand-soft");
+        if (!phoneOk) phone.classList.add("border-brand-soft");
+        if (!nameOk || !phoneOk) return;
+
+        form.reset();
+        note.classList.remove("hidden");
+      });
+    })();
+  </script>
+</body>
+
+</html>

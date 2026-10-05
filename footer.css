@@ -1,0 +1,59 @@
+[data-theme="dark"] footer div,
+[data-theme="dark"] footer span,
+[data-theme="dark"] footer a,
+[data-theme="dark"] footer i {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] footer {
+  background-color: #000000 !important;
+  border-top-color: rgba(211, 69, 48, 0.35) !important;
+}
+
+[data-theme="dark"] footer a:hover {
+  color: #E8735F !important;
+}
+
+/* ---------- Hover effects (shared across all pages) ---------- */
+
+footer li a {
+  display: inline-block;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+footer li a:hover {
+  color: #D64530 !important;
+  transform: translateX(5px);
+}
+
+[data-theme="dark"] footer li a:hover {
+  color: #E8735F !important;
+}
+
+footer a[aria-label] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  border-radius: 9999px;
+  border: 1px solid rgba(163, 22, 33, 0.25);
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+footer a[aria-label]:hover {
+  background-color: #A31621;
+  border-color: #A31621;
+  color: #FFFFFF !important;
+  transform: translateY(-3px);
+}
+
+[data-theme="dark"] footer a[aria-label] {
+  border-color: rgba(232, 115, 95, 0.3);
+}
+
+[data-theme="dark"] footer a[aria-label]:hover {
+  background-color: #D64530;
+  border-color: #D64530;
+}

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Achar &mdash; Specialty Pickle &amp; Homemade Preserve Store</title>
+  <meta name="description"
+    content="Three generations of hand-fermented pickle making in Varanasi since 1948. Meet the family behind the jars.">
+  <link rel="icon" href="images/logo.png">
+  <script src="tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#A31621',
+              deep: '#7A1218',
+              soft: '#D64530',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #a31621;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+  </style>
+  <script>
+    (function () {
+      const t = localStorage.getItem('theme') || 'light';
+      const html = document.documentElement;
+      html.setAttribute('data-theme', t);
+      html.classList.toggle('dark', t === 'dark');
+    })();
+  </script>
+</head>
+
+<body class="font-sans bg-white text-brand dark:bg-black dark:text-white">
+  <div id="navbar"></div>
+
+  <main>
+    <!-- ============ 1. HERO (full-bleed bg image) ============ -->
+    <section class="relative isolate flex min-h-[540px] items-center overflow-hidden bg-brand-deep sm:min-h-[620px] lg:min-h-[700px]">
+      <img src="images/store-front.jpg" alt="" aria-hidden="true" width="1200" height="800"
+        class="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-deep/90 via-brand-deep/75 to-black/90"></div>
+
+      <div class="mx-auto w-full max-w-4xl px-5 py-28 text-center sm:px-6 sm:py-32 lg:py-36">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 font-sans text-[10px] font-bold uppercase tracking-[0.24em] text-amber-200 backdrop-blur">
+          <i class="bi bi-clock-history"></i> Since 1948 &middot; Varanasi
+        </span>
+
+        <h1 class="mt-7 font-serif text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Three generations,<br />one <span class="italic text-amber-300">kitchen</span>
+        </h1>
+
+        <p class="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+          We are a small family shop on Gandhi Market in Varanasi. Since 1948 we have
+          been fermenting pickle the slow way &mdash; in brass jars, with stone-ground
+          masala and no shortcuts. Everything you taste in our jars started at our
+          counter.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4">
+          <a href="products.html"
+            class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand-deep transition hover:-translate-y-0.5 hover:bg-amber-300">
+            Shop the jars <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="contact.html"
+            class="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white/10">
+            Visit the shop
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. OUR STORY TIMELINE ============ -->
+    <section id="our-story" class="relative overflow-hidden border-y border-brand/15 bg-gradient-to-b from-brand/[0.02] via-amber-500/[0.03] to-brand/[0.04] py-20 sm:py-24 lg:py-28 dark:border-white/10 dark:from-neutral-950 dark:via-neutral-900/60 dark:to-neutral-950">
+      <!-- Decorative ambient glows -->
+      <div class="pointer-events-none absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-brand/5 blur-3xl dark:bg-red-950/20" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-40 bottom-1/4 h-96 w-96 rounded-full bg-amber-500/5 blur-3xl dark:bg-amber-950/15" aria-hidden="true"></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-soft shadow-sm dark:border-white/15 dark:bg-white/5 dark:text-red-300">
+            <i class="bi bi-clock-history text-amber-500"></i> Generational Timeline &middot; Since 1948
+          </span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl dark:text-white">
+            Seventy-six years, told in batches
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-neutral-600 dark:text-neutral-300 sm:text-lg">
+            From Kamleshwar ji's single wooden tray outside Varanasi's Gandhi Market to glass jars savoured across India. Every milestone is defined by patience, pure mustard oil, and generational craft.
+          </p>
+
+          <!-- Interactive Milestone Fast-Jump Pills -->
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-2">
+            <a href="#milestone-1948" class="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-2 text-xs font-medium text-brand shadow-sm transition hover:border-brand hover:bg-brand hover:text-white dark:border-white/15 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-amber-400 dark:hover:text-amber-300">
+              <span class="h-2 w-2 rounded-full bg-amber-500"></span> 1948 &middot; The Humble Tray
+            </a>
+            <a href="#milestone-1972" class="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-2 text-xs font-medium text-brand shadow-sm transition hover:border-brand hover:bg-brand hover:text-white dark:border-white/15 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-amber-400 dark:hover:text-amber-300">
+              <span class="h-2 w-2 rounded-full bg-red-500"></span> 1972 &middot; The Masala Stone
+            </a>
+            <a href="#milestone-1998" class="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-2 text-xs font-medium text-brand shadow-sm transition hover:border-brand hover:bg-brand hover:text-white dark:border-white/15 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-amber-400 dark:hover:text-amber-300">
+              <span class="h-2 w-2 rounded-full bg-amber-500"></span> 1998 &middot; Glass &amp; Map
+            </a>
+            <a href="#milestone-today" class="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-2 text-xs font-medium text-brand shadow-sm transition hover:border-brand hover:bg-brand hover:text-white dark:border-white/15 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-amber-400 dark:hover:text-amber-300">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span> Today &middot; 40 Jars a Batch
+            </a>
+          </div>
+        </div>
+
+        <!-- The Timeline Spine & Milestones -->
+        <div class="relative mt-16 lg:mt-20">
+          <!-- Central Connecting Vertical Track (Desktop: center, Mobile: left aligned) -->
+          <div class="absolute left-6 top-8 bottom-8 w-0.5 bg-gradient-to-b from-brand/20 via-brand-soft to-amber-500/40 lg:left-1/2 lg:-translate-x-1/2 dark:from-red-400/20 dark:via-red-500/40 dark:to-amber-400/30" aria-hidden="true"></div>
+
+          <div class="space-y-12 lg:space-y-16">
+            <!-- 1. Milestone 1948 (Desktop: Left) -->
+            <div id="milestone-1948" class="relative scroll-mt-28 flex flex-col lg:flex-row lg:items-center">
+              <!-- Central Milestone Node -->
+              <div class="absolute left-6 -translate-x-1/2 flex h-12 w-12 items-center justify-center rounded-full border-4 border-white bg-brand text-white shadow-lg lg:left-1/2 dark:border-neutral-900 dark:bg-brand dark:shadow-red-950/50">
+                <i class="bi bi-shop text-lg"></i>
+              </div>
+
+              <!-- Desktop Left Column Card -->
+              <div class="ml-14 lg:ml-0 lg:w-1/2 lg:pr-14">
+                <div class="group relative rounded-3xl border border-brand/15 bg-white p-6 shadow-lg shadow-brand/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 sm:p-8">
+                  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brand/10 pb-4 dark:border-white/10">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 font-serif text-sm font-bold tracking-wider text-brand dark:bg-white/10 dark:text-red-300">
+                      <i class="bi bi-calendar3"></i> 1948
+                    </span>
+                    <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
+                      The Origin Batch
+                    </span>
+                  </div>
+                  <h3 class="mt-4 font-serif text-2xl font-bold tracking-tight text-neutral-900 group-hover:text-brand dark:text-white dark:group-hover:text-amber-300 transition-colors">
+                    A stall, not a shop
+                  </h3>
+                  <p class="mt-3 text-sm sm:text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
+                    Kamleshwar ji started with a humble wooden tray outside Varanasi’s Gandhi Market selling freshly stone-ground spices. When a neighbour asked if he could preserve surplus summer mangoes, the first trial brass jar was sealed with hand-pressed mustard oil.
+                  </p>
+                  <div class="mt-5 flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-900 dark:bg-amber-950/40 dark:text-amber-300">
+                      <i class="bi bi-check-circle-fill text-amber-500"></i> Gandhi Market wooden tray
+                    </span>
+                    <span class="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-900 dark:bg-amber-950/40 dark:text-amber-300">
+                      <i class="bi bi-check-circle-fill text-amber-500"></i> 1st Brass Jar trial batch
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Desktop Right Column Spacer / Context -->
+              <div class="hidden lg:block lg:w-1/2 lg:pl-14">
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 flex items-center gap-2">
+                  <span class="h-px w-8 bg-brand/20 dark:bg-white/20"></span> Gandhi Market &middot; Varanasi
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Milestone 1972 (Desktop: Right) -->
+            <div id="milestone-1972" class="relative scroll-mt-28 flex flex-col lg:flex-row lg:items-center">
+              <!-- Central Milestone Node -->
+              <div class="absolute left-6 -translate-x-1/2 flex h-12 w-12 items-center justify-center rounded-full border-4 border-white bg-brand-deep text-amber-300 shadow-lg lg:left-1/2 dark:border-neutral-900 dark:bg-brand-deep dark:shadow-red-950/50">
+                <i class="bi bi-fire text-lg"></i>
+              </div>
+
+              <!-- Desktop Left Column Spacer / Context -->
+              <div class="hidden lg:block lg:w-1/2 lg:pr-14 text-right">
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 flex items-center justify-end gap-2">
+                  Guntur &middot; Andhra Pradesh <span class="h-px w-8 bg-brand/20 dark:bg-white/20"></span>
+                </div>
+              </div>
+
+              <!-- Desktop Right Column Card -->
+              <div class="ml-14 lg:ml-0 lg:w-1/2 lg:pl-14">
+                <div class="group relative rounded-3xl border border-brand/15 bg-white p-6 shadow-lg shadow-brand/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 sm:p-8">
+                  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brand/10 pb-4 dark:border-white/10">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 font-serif text-sm font-bold tracking-wider text-brand dark:bg-white/10 dark:text-red-300">
+                      <i class="bi bi-calendar3"></i> 1972
+                    </span>
+                    <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
+                      The Spice Milestone
+                    </span>
+                  </div>
+                  <h3 class="mt-4 font-serif text-2xl font-bold tracking-tight text-neutral-900 group-hover:text-brand dark:text-white dark:group-hover:text-amber-300 transition-colors">
+                    The masala stone
+                  </h3>
+                  <p class="mt-3 text-sm sm:text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
+                    Ghar-resham single-crop chilli from Guntur entered our family formula. We began grinding spices exclusively on our deep black granite stone (sil-batta) so the friction produces warmth rather than scorch—allowing essential oils to bloom deep into the oil.
+                  </p>
+                  <div class="mt-5 flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-md bg-red-50 px-2.5 py-1 text-xs font-medium text-red-900 dark:bg-red-950/40 dark:text-red-300">
+                      <i class="bi bi-check-circle-fill text-red-500"></i> Ghar-resham chilli sourcing
+                    </span>
+                    <span class="inline-flex items-center gap-1 rounded-md bg-red-50 px-2.5 py-1 text-xs font-medium text-red-900 dark:bg-red-950/40 dark:text-red-300">
+                      <i class="bi bi-check-circle-fill text-red-500"></i> Hand stone ground masalas
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Milestone 1998 (Desktop: Left) -->
+            <div id="milestone-1998" class="relative scroll-mt-28 flex flex-col lg:flex-row lg:items-center">
+              <!-- Central Milestone Node -->
+              <div class="absolute left-6 -translate-x-1/2 flex h-12 w-12 items-center justify-center rounded-full border-4 border-white bg-brand text-amber-200 shadow-lg lg:left-1/2 dark:border-neutral-900 dark:bg-brand dark:shadow-red-950/50">
+                <i class="bi bi-box-seam text-lg"></i>
+              </div>
+
+              <!-- Desktop Left Column Card -->
+              <div class="ml-14 lg:ml-0 lg:w-1/2 lg:pr-14">
+                <div class="group relative rounded-3xl border border-brand/15 bg-white p-6 shadow-lg shadow-brand/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900 sm:p-8">
+                  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brand/10 pb-4 dark:border-white/10">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 font-serif text-sm font-bold tracking-wider text-brand dark:bg-white/10 dark:text-red-300">
+                      <i class="bi bi-calendar3"></i> 1998
+                    </span>
+                    <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
+                      Expansion &amp; Craft
+                    </span>
+                  </div>
+                  <h3 class="mt-4 font-serif text-2xl font-bold tracking-tight text-neutral-900 group-hover:text-brand dark:text-white dark:group-hover:text-amber-300 transition-colors">
+                    Glass, and a wider map
+                  </h3>
+                  <p class="mt-3 text-sm sm:text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
+                    We moved into our permanent storefront with a brass tasting counter. We replaced old bulk containers with thick, sterilized glass jars to protect the live fermentation, and started shipping parcel-packed crates across India to families yearning for authentic home taste.
+                  </p>
+                  <div class="mt-5 flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-900 dark:bg-amber-950/40 dark:text-amber-300">
+                      <i class="bi bi-check-circle-fill text-amber-500"></i> Open brass tasting counter
+                    </span>
+                    <span class="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-900 dark:bg-amber-950/40 dark:text-amber-300">
+                      <i class="bi bi-check-circle-fill text-amber-500"></i> First pan-India parcel deliveries
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Desktop Right Column Spacer / Context -->
+              <div class="hidden lg:block lg:w-1/2 lg:pl-14">
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 flex items-center gap-2">
+                  <span class="h-px w-8 bg-brand/20 dark:bg-white/20"></span> Permanent Tasting Counter &middot; Varanasi
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Milestone Today (Desktop: Right) -->
+            <div id="milestone-today" class="relative scroll-mt-28 flex flex-col lg:flex-row lg:items-center">
+              <!-- Central Milestone Node -->
+              <div class="absolute left-6 -translate-x-1/2 flex h-12 w-12 items-center justify-center rounded-full border-4 border-white bg-amber-500 text-brand-deep shadow-lg lg:left-1/2 dark:border-neutral-900 dark:bg-amber-400 dark:shadow-amber-950/50">
+                <i class="bi bi-stars text-xl"></i>
+              </div>
+
+              <!-- Desktop Left Column Spacer / Context -->
+              <div class="hidden lg:block lg:w-1/2 lg:pr-14 text-right">
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 flex items-center justify-end gap-2">
+                  40 Jars per Batch &middot; Third Generation <span class="h-px w-8 bg-brand/20 dark:bg-white/20"></span>
+                </div>
+              </div>
+
+              <!-- Desktop Right Column Card -->
+              <div class="ml-14 lg:ml-0 lg:w-1/2 lg:pl-14">
+                <div class="group relative rounded-3xl border-2 border-brand/30 bg-gradient-to-br from-white to-amber-50/50 p-6 shadow-xl shadow-brand/[0.06] transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-2xl hover:shadow-brand/15 dark:border-amber-400/30 dark:from-neutral-900 dark:to-neutral-900/90 sm:p-8">
+                  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brand/10 pb-4 dark:border-white/10">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3.5 py-1 font-serif text-sm font-bold tracking-wider text-amber-900 dark:bg-amber-400/20 dark:text-amber-300">
+                      <i class="bi bi-patch-check-fill text-amber-600 dark:text-amber-400"></i> Present Day
+                    </span>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-[0.16em] text-emerald-600 dark:text-emerald-400">
+                      <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span> Active Kitchen
+                    </span>
+                  </div>
+                  <h3 class="mt-4 font-serif text-2xl font-bold tracking-tight text-neutral-900 group-hover:text-brand dark:text-white dark:group-hover:text-amber-300 transition-colors">
+                    Forty jars a batch &mdash; no shortcuts
+                  </h3>
+                  <p class="mt-3 text-sm sm:text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
+                    The third generation now runs the kitchen floor. While orders have grown tenfold, batch sizes have remained steadfast at 40 jars per brew. Every jar is still filled with a brass ladle, tested by Meera ji, and checked by hand before shipping.
+                  </p>
+                  <div class="mt-5 flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-300">
+                      <i class="bi bi-shield-check text-emerald-500"></i> 100% Preservative Free
+                    </span>
+                    <span class="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-300">
+                      <i class="bi bi-sun text-emerald-500"></i> Courtyard Sun Fermented
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. WHAT WE NEVER USE ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-24 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">
+              Our rules
+            </span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              Six things we will never put in a jar
+            </h2>
+            <p class="mt-4 max-w-xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              A short list, kept by everyone who works here. If a customer asks what is
+              in our pickle, this is the whole answer.
+            </p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:col-span-7">
+            <div class="group flex items-start gap-4 rounded-2xl border border-brand/15 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand/10 font-serif font-bold text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300">1</span>
+              <div>
+                <h3 class="font-serif text-lg font-bold dark:text-white">No preservatives</h3>
+                <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Salt, mustard oil and time. Nothing that extends life artificially.</p>
+              </div>
+            </div>
+            <div class="group flex items-start gap-4 rounded-2xl border border-brand/15 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand/10 font-serif font-bold text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300">2</span>
+              <div>
+                <h3 class="font-serif text-lg font-bold dark:text-white">No artificial colour</h3>
+                <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">If a pickle is bright red, it came from ghar-resham chilli. Not a dye.</p>
+              </div>
+            </div>
+            <div class="group flex items-start gap-4 rounded-2xl border border-brand/15 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand/10 font-serif font-bold text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300">3</span>
+              <div>
+                <h3 class="font-serif text-lg font-bold dark:text-white">No vinegar</h3>
+                <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Acidity comes from hing and fermentation. No sourness added.</p>
+              </div>
+            </div>
+            <div class="group flex items-start gap-4 rounded-2xl border border-brand/15 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand/10 font-serif font-bold text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300">4</span>
+              <div>
+                <h3 class="font-serif text-lg font-bold dark:text-white">No ready-made masala</h3>
+                <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Our blend is ground in-house every batch, adjusted by hand.</p>
+              </div>
+            </div>
+            <div class="group flex items-start gap-4 rounded-2xl border border-brand/15 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand/10 font-serif font-bold text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300">5</span>
+              <div>
+                <h3 class="font-serif text-lg font-bold dark:text-white">No factory kilns</h3>
+                <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Sun-dried in the courtyard, never force-dried in a hot room.</p>
+              </div>
+            </div>
+            <div class="group flex items-start gap-4 rounded-2xl border border-brand/15 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-brand-soft hover:shadow-xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand/10 font-serif font-bold text-brand-soft transition duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white dark:bg-white/10 dark:text-red-300">6</span>
+              <div>
+                <h3 class="font-serif text-lg font-bold dark:text-white">No rush</h3>
+                <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">A jar leaves the fermenting room only when it tastes ready.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. THE PEOPLE ============ -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">The people</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Four people, one kitchen
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            There is no factory floor behind these jars. You will meet the same faces
+            when you walk in.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- 1. Kamleshwar Singh -->
+          <article class="group overflow-hidden rounded-3xl border border-brand/15 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/15 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-amber-400/40">
+            <div class="relative aspect-square w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+              <img src="images/team-ks.jpg" alt="Kamleshwar Singh - Founder"
+                class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-60"></div>
+              <span class="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 font-sans text-[11px] font-bold tracking-wide text-brand shadow backdrop-blur dark:bg-black/85 dark:text-amber-300">
+                <i class="bi bi-clock-history text-amber-500"></i> Est. 1948
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-neutral-900 transition-colors group-hover:text-brand dark:text-white dark:group-hover:text-amber-300">Kamleshwar Singh</h3>
+              <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:text-red-300">Founder &amp; Master Blender</p>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Started the stall in 1948. His masala ratio is still the sacred foundation of every batch we ferment.
+              </p>
+              <div class="mt-4 flex items-center gap-2 border-t border-brand/10 pt-3 text-xs italic text-neutral-500 dark:border-white/10 dark:text-neutral-400">
+                <i class="bi bi-quote text-base text-amber-500"></i>
+                <span>"Good masala blooms slowly, never in a rush."</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Meera Singh -->
+          <article class="group overflow-hidden rounded-3xl border border-brand/15 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/15 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-amber-400/40">
+            <div class="relative aspect-square w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+              <img src="images/team-ms.jpg" alt="Meera Singh - Head of Fermentation"
+                class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-60"></div>
+              <span class="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 font-sans text-[11px] font-bold tracking-wide text-brand shadow backdrop-blur dark:bg-black/85 dark:text-amber-300">
+                <i class="bi bi-hourglass-split text-amber-500"></i> 22 Yrs Master
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-neutral-900 transition-colors group-hover:text-brand dark:text-white dark:group-hover:text-amber-300">Meera Singh</h3>
+              <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:text-red-300">Head of Fermentation</p>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Decides when each jar is ready. Twenty-two years of tasting the same recipe, and still she writes notes.
+              </p>
+              <div class="mt-4 flex items-center gap-2 border-t border-brand/10 pt-3 text-xs italic text-neutral-500 dark:border-white/10 dark:text-neutral-400">
+                <i class="bi bi-quote text-base text-amber-500"></i>
+                <span>"A jar tells you when it's done—trust the aroma."</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Anjali Singh -->
+          <article class="group overflow-hidden rounded-3xl border border-brand/15 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/15 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-amber-400/40">
+            <div class="relative aspect-square w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+              <img src="images/team-as.jpg" alt="Anjali Singh - Third Generation"
+                class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-60"></div>
+              <span class="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 font-sans text-[11px] font-bold tracking-wide text-brand shadow backdrop-blur dark:bg-black/85 dark:text-amber-300">
+                <i class="bi bi-shop-window text-amber-500"></i> Tasting Counter
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-neutral-900 transition-colors group-hover:text-brand dark:text-white dark:group-hover:text-amber-300">Anjali Singh</h3>
+              <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:text-red-300">Third Generation &middot; Operations</p>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Runs the counter, packs every jar by hand, and handles all corporate and wedding bulk gifting orders.
+              </p>
+              <div class="mt-4 flex items-center gap-2 border-t border-brand/10 pt-3 text-xs italic text-neutral-500 dark:border-white/10 dark:text-neutral-400">
+                <i class="bi bi-quote text-base text-amber-500"></i>
+                <span>"Sharing Varanasi's culinary soul across the map."</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Ramesh Kumar -->
+          <article class="group overflow-hidden rounded-3xl border border-brand/15 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/15 dark:border-white/10 dark:bg-neutral-900 dark:hover:border-amber-400/40">
+            <div class="relative aspect-square w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+              <img src="images/team-rk.jpg" alt="Ramesh Kumar - Sourcing"
+                class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-60"></div>
+              <span class="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 font-sans text-[11px] font-bold tracking-wide text-brand shadow backdrop-blur dark:bg-black/85 dark:text-amber-300">
+                <i class="bi bi-geo-alt text-amber-500"></i> Orchards Lead
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-neutral-900 transition-colors group-hover:text-brand dark:text-white dark:group-hover:text-amber-300">Ramesh Kumar</h3>
+              <p class="mt-1 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-brand-soft dark:text-red-300">Head of Direct Sourcing</p>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Visits the Ratnagiri and UP orchards each April to personally handpick the fruit we will ferment that season.
+              </p>
+              <div class="mt-4 flex items-center gap-2 border-t border-brand/10 pt-3 text-xs italic text-neutral-500 dark:border-white/10 dark:text-neutral-400">
+                <i class="bi bi-quote text-base text-amber-500"></i>
+                <span>"The best pickles begin right on the orchard bough."</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. WHERE WE SOURCE ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-24 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-6">
+            <img src="images/hero-pickles.jpg" alt="Pickle jars on the Achar counter" width="1200"
+              height="900" loading="lazy"
+              class="aspect-[4/3] w-full rounded-3xl object-cover shadow-2xl shadow-brand/10 ring-1 ring-brand/15 transition duration-500 hover:scale-[1.02] hover:shadow-brand/20 dark:ring-white/10" />
+          </div>
+          <div class="lg:col-span-6">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Sourcing</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              We know the people who grow it
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Every season we buy direct from growers we have worked with for years. It
+              costs us more and it is the reason the pickle tastes like something.
+            </p>
+
+            <dl class="mt-9 divide-y divide-brand/15 border-y border-brand/15 dark:divide-white/10 dark:border-white/10">
+              <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <dt class="font-serif text-lg font-bold dark:text-white">Raw mango</dt>
+                <dd class="text-sm text-neutral-600 dark:text-neutral-400">Ratnagiri &amp; Baramati orchards &middot; picked April</dd>
+              </div>
+              <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <dt class="font-serif text-lg font-bold dark:text-white">Ghar-resham chilli</dt>
+                <dd class="text-sm text-neutral-600 dark:text-neutral-400">Guntur, Andhra Pradesh &middot; single crop</dd>
+              </div>
+              <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <dt class="font-serif text-lg font-bold dark:text-white">Mustard oil</dt>
+                <dd class="text-sm text-neutral-600 dark:text-neutral-400">Cold-pressed in Gorakhpur &middot; wood pressed</dd>
+              </div>
+              <div class="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <dt class="font-serif text-lg font-bold dark:text-white">Amla &amp; lemon</dt>
+                <dd class="text-sm text-neutral-600 dark:text-neutral-400">Pratapgarh &amp; Sikkim &middot; winter harvest</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CLOSING CTA ============ -->
+    <section class="bg-brand py-16 text-white sm:py-20 dark:bg-brand-deep">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center gap-8 text-center lg:flex-row lg:justify-between lg:text-start">
+          <div class="max-w-2xl">
+            <h2 class="font-serif text-3xl font-bold leading-tight sm:text-4xl">Taste it before you buy it</h2>
+            <p class="mt-4 text-base leading-relaxed text-white/90">
+              Bring an empty jar and we will fill it from the tap. No obligation, no
+              salesperson &mdash; just a spoon and an honest opinion.
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-3 lg:flex-none lg:flex-col">
+            <a href="contact.html"
+              class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:-translate-y-0.5 hover:bg-amber-300 hover:text-brand-deep">
+              Plan a visit <i class="bi bi-calendar-check"></i>
+            </a>
+            <a href="products.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] transition hover:bg-white/10">
+              Browse products
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>

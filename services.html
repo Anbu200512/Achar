@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Achar &mdash; Specialty Pickle &amp; Homemade Preserve Store</title>
+  <meta name="description"
+    content="Bulk supply, corporate gifting, monthly Pickle Club subscriptions, custom jarring, home fermentation kits and event catering from Achar.">
+  <link rel="icon" href="images/logo.png">
+  <script src="tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#A31621',
+              deep: '#7A1218',
+              soft: '#D64530',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #a31621;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+  </style>
+  <script>
+    (function () {
+      const t = localStorage.getItem('theme') || 'light';
+      const html = document.documentElement;
+      html.setAttribute('data-theme', t);
+      html.classList.toggle('dark', t === 'dark');
+    })();
+  </script>
+</head>
+
+<body class="font-sans bg-white text-brand dark:bg-black dark:text-white">
+  <div id="navbar"></div>
+
+  <main>
+    <!-- ============ 1. HERO (full-bleed bg image) ============ -->
+    <section class="relative isolate flex min-h-[540px] items-center overflow-hidden bg-brand-deep sm:min-h-[620px] lg:min-h-[700px]">
+      <img src="images/hero-pickles.jpg" alt="" aria-hidden="true" width="1200" height="900"
+        class="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-deep/90 via-brand-deep/75 to-black/90"></div>
+
+      <div class="mx-auto w-full max-w-4xl px-5 py-28 text-center sm:px-6 sm:py-32 lg:py-36">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 font-sans text-[10px] font-bold uppercase tracking-[0.24em] text-amber-200 backdrop-blur">
+          <i class="bi bi-gear"></i> Wholesale &middot; Club &middot; Kits
+        </span>
+
+        <h1 class="mt-7 font-serif text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Beyond the shop<br /><span class="italic text-amber-300">counter</span>
+        </h1>
+
+        <p class="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+          The same small-batch kitchen, supplying other kitchens. Wholesale jars for
+          shops, hampers for companies, a monthly club for families, and a fermentation
+          kit if you would rather make it yourself.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4">
+          <a href="contact.html"
+            class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand-deep transition hover:-translate-y-0.5 hover:bg-amber-300">
+            Request a quote <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="bulk-gifting.html"
+            class="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white/10">
+            See hamper pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. SERVICES GRID ============ -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">
+            What we do
+          </span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Six services, one kitchen
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-xl text-brand-soft dark:bg-white/10 dark:text-red-300"><i class="bi bi-box-seam"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-bold dark:text-white">Wholesale &amp; bulk supply</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Regular stock for kirana stores, restaurants and caterers. Fifteen-day
+              billing, slab pricing and free delivery inside Varanasi.
+            </p>
+            <p class="mt-4 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand-soft dark:text-red-300">From 25 jars</p>
+          </article>
+
+          <article class="rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-xl text-brand-soft dark:bg-white/10 dark:text-red-300"><i class="bi bi-gift"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-bold dark:text-white">Corporate &amp; festive gifting</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Diwali hampers, onboarding kits, wedding favours. Your label on the jar,
+              your message on the card, packed to order.
+            </p>
+            <p class="mt-4 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand-soft dark:text-red-300">Lead time 10 days</p>
+          </article>
+
+          <article class="rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-xl text-brand-soft dark:bg-white/10 dark:text-red-300"><i class="bi bi-arrow-repeat"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-bold dark:text-white">Pickle Club subscription</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              A rotating selection of two or three jars every month, shipped before the
+              old one runs out. Pause or cancel whenever.
+            </p>
+            <p class="mt-4 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand-soft dark:text-red-300">Monthly or quarterly</p>
+          </article>
+
+          <article class="rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-xl text-brand-soft dark:bg-white/10 dark:text-red-300"><i class="bi bi-tags"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-bold dark:text-white">Custom jarring &amp; labelling</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Private-label pickle for brands and hotels. We work to your jar size,
+              label artwork and spice tolerance.
+            </p>
+            <p class="mt-4 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand-soft dark:text-red-300">MOQ 100 jars</p>
+          </article>
+
+          <article class="rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-xl text-brand-soft dark:bg-white/10 dark:text-red-300"><i class="bi bi-house-heart"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-bold dark:text-white">Home fermentation kit</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Our masala, mustard oil and a brass jar, with a written schedule. Make a
+              full batch of aam achar in your own kitchen.
+            </p>
+            <p class="mt-4 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand-soft dark:text-red-300">Ships in 3 days</p>
+          </article>
+
+          <article class="rounded-2xl border border-brand/15 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-xl text-brand-soft dark:bg-white/10 dark:text-red-300"><i class="bi bi-cup-hot"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-bold dark:text-white">Event &amp; catering supply</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Live pickle counters and tasting stations at weddings, food festivals and
+              market stalls across North India.
+            </p>
+            <p class="mt-4 font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-brand-soft dark:text-red-300">Book by date</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. HOW A CUSTOM ORDER WORKS ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-24 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">The process</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              How a custom order runs
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Four steps, usually completed in ten working days from the moment you get
+              in touch.
+            </p>
+          </div>
+
+          <ol class="grid gap-8 sm:grid-cols-2 lg:col-span-7">
+            <li class="border-t-2 border-brand/25 pt-6 dark:border-white/15">
+              <span class="font-serif text-sm font-bold tracking-[0.12em] text-brand-soft dark:text-red-300">Step 01</span>
+              <h3 class="mt-3 font-serif text-xl font-bold dark:text-white">Enquiry</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Tell us quantity, occasion and budget. We reply the same working day.</p>
+            </li>
+            <li class="border-t-2 border-brand/25 pt-6 dark:border-white/15">
+              <span class="font-serif text-sm font-bold tracking-[0.12em] text-brand-soft dark:text-red-300">Step 02</span>
+              <h3 class="mt-3 font-serif text-xl font-bold dark:text-white">Tasting</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Visit the counter, or we send a sample box so your team can choose.</p>
+            </li>
+            <li class="border-t-2 border-brand/25 pt-6 dark:border-white/15">
+              <span class="font-serif text-sm font-bold tracking-[0.12em] text-brand-soft dark:text-red-300">Step 03</span>
+              <h3 class="mt-3 font-serif text-xl font-bold dark:text-white">Label proof</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Artwork goes on a digital proof. Nothing is printed until you approve it.</p>
+            </li>
+            <li class="border-t-2 border-brand/25 pt-6 dark:border-white/15">
+              <span class="font-serif text-sm font-bold tracking-[0.12em] text-brand-soft dark:text-red-300">Step 04</span>
+              <h3 class="mt-3 font-serif text-xl font-bold dark:text-white">Packed &amp; shipped</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Hand-packed, sealed and dispatched with a batch card and invoice.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PICKLE CLUB TIERS ============ -->
+    <section id="club" class="scroll-mt-28 border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Pickle Club</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            A jar in the house, always
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            Choose a size, we choose the varieties. Shipping and subscription handling
+            are included in every tier.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <div class="group flex flex-col rounded-2xl border border-brand/15 bg-white p-8 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <h3 class="font-serif text-2xl font-bold dark:text-white">The Taster</h3>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">Two 250 g jars a month</p>
+            <p class="mt-6 font-serif text-4xl font-bold dark:text-white">&#8377;390<span class="font-sans text-sm font-medium text-neutral-500 dark:text-neutral-400"> / month</span></p>
+            <ul class="mt-7 flex-1 space-y-3">
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Two rotating varieties</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Free shipping</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Batch card in every parcel</li>
+            </ul>
+            <a href="contact.html"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand/25 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:border-brand hover:bg-brand/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5">Start Taster</a>
+          </div>
+
+          <div class="group relative flex flex-col rounded-2xl border-2 border-brand bg-white p-8 shadow-2xl shadow-brand/15 transition duration-300 hover:-translate-y-1.5 hover:shadow-brand/30 dark:bg-neutral-900">
+            <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-brand px-4 py-1.5 font-sans text-[9px] font-bold uppercase tracking-[0.18em] text-white">Most chosen</span>
+            <h3 class="font-serif text-2xl font-bold dark:text-white">The Family</h3>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">Two 500 g jars plus one small</p>
+            <p class="mt-6 font-serif text-4xl font-bold dark:text-white">&#8377;690<span class="font-sans text-sm font-medium text-neutral-500 dark:text-neutral-400"> / month</span></p>
+            <ul class="mt-7 flex-1 space-y-3">
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Anything from the catalogue</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Early access to new batches</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Free shipping &amp; pause any month</li>
+            </ul>
+            <a href="contact.html"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-brand-soft">Start Family</a>
+          </div>
+
+          <div class="group flex flex-col rounded-2xl border border-brand/15 bg-white p-8 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <h3 class="font-serif text-2xl font-bold dark:text-white">The Pantry</h3>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">Four 500 g jars a month</p>
+            <p class="mt-6 font-serif text-4xl font-bold dark:text-white">&#8377;1,250<span class="font-sans text-sm font-medium text-neutral-500 dark:text-neutral-400"> / month</span></p>
+            <ul class="mt-7 flex-1 space-y-3">
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Full pantry, your mix</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Two free hamper boxes a year</li>
+              <li class="flex items-start gap-3 rounded-lg px-2 py-1 text-sm text-neutral-700 transition duration-200 hover:translate-x-1 hover:text-brand dark:text-neutral-300 dark:hover:text-red-300"><i class="bi bi-check2 text-brand-soft transition duration-200 group-hover:scale-125 dark:text-red-300"></i>Direct line to the counter</li>
+            </ul>
+            <a href="contact.html"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand/25 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:border-brand hover:bg-brand/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5">Start Pantry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. HOME FERMENTATION KIT ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-24 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-6">
+            <img src="images/recipe-aam-achar.jpg" alt="Achar home fermentation kit with masala and a brass jar" width="900"
+              height="700" loading="lazy"
+              class="aspect-[9/7] w-full rounded-3xl object-cover shadow-2xl shadow-brand/10 ring-1 ring-brand/15 dark:ring-white/10" />
+          </div>
+          <div class="lg:col-span-6">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">
+              Make it yourself
+            </span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              The home fermentation kit
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Everything we use, minus the mango. You buy the fruit, we send the masala,
+              the oil and a brass jar &mdash; plus the schedule we actually follow.
+            </p>
+
+            <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+              <li class="flex items-center gap-3 rounded-xl border border-brand/15 px-4 py-3 text-sm font-medium dark:border-white/10 dark:bg-neutral-900">
+                <i class="bi bi-check-circle text-brand-soft dark:text-red-300"></i> 400 g house masala
+              </li>
+              <li class="flex items-center gap-3 rounded-xl border border-brand/15 px-4 py-3 text-sm font-medium dark:border-white/10 dark:bg-neutral-900">
+                <i class="bi bi-check-circle text-brand-soft dark:text-red-300"></i> 250 ml mustard oil
+              </li>
+              <li class="flex items-center gap-3 rounded-xl border border-brand/15 px-4 py-3 text-sm font-medium dark:border-white/10 dark:bg-neutral-900">
+                <i class="bi bi-check-circle text-brand-soft dark:text-red-300"></i> One brass jar, 1 kg
+              </li>
+              <li class="flex items-center gap-3 rounded-xl border border-brand/15 px-4 py-3 text-sm font-medium dark:border-white/10 dark:bg-neutral-900">
+                <i class="bi bi-check-circle text-brand-soft dark:text-red-300"></i> Written 30-day schedule
+              </li>
+              <li class="flex items-center gap-3 rounded-xl border border-brand/15 px-4 py-3 text-sm font-medium dark:border-white/10 dark:bg-neutral-900">
+                <i class="bi bi-check-circle text-brand-soft dark:text-red-300"></i> Rock salt, 1 kg
+              </li>
+              <li class="flex items-center gap-3 rounded-xl border border-brand/15 px-4 py-3 text-sm font-medium dark:border-white/10 dark:bg-neutral-900">
+                <i class="bi bi-check-circle text-brand-soft dark:text-red-300"></i> WhatsApp support
+              </li>
+            </ul>
+
+            <div class="mt-9 flex flex-wrap items-center gap-5">
+              <span class="font-serif text-3xl font-bold dark:text-white">&#8377;890</span>
+              <a href="contact.html"
+                class="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:-translate-y-0.5 hover:bg-brand-soft">
+                Order the kit <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. FAQ ACCORDION ============ -->
+    <section class="border-t border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Questions</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Before you order
+          </h2>
+        </div>
+
+        <div class="mt-10 divide-y divide-brand/15 border-y border-brand/15 dark:divide-white/10 dark:border-white/10" id="faq">
+
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg px-2 py-1 font-serif text-lg font-bold transition duration-200 hover:text-brand-soft hover:underline hover:decoration-brand-soft/40 hover:underline-offset-4 dark:text-white dark:hover:text-red-300">
+              What is the minimum order for wholesale?
+              <i class="bi bi-plus-lg flex-none text-brand-soft transition group-open:rotate-45 dark:text-red-300"></i>
+            </summary>
+            <p class="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Twenty-five jars. Below that we would rather you buy retail, because
+              hand-packing smaller quantities costs more than the jars are worth.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg px-2 py-1 font-serif text-lg font-bold transition duration-200 hover:text-brand-soft hover:underline hover:decoration-brand-soft/40 hover:underline-offset-4 dark:text-white dark:hover:text-red-300">
+              How far ahead should I book festive hampers?
+              <i class="bi bi-plus-lg flex-none text-brand-soft transition group-open:rotate-45 dark:text-red-300"></i>
+            </summary>
+            <p class="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Ten working days for Diwali, six for weddings. Peak season runs
+              September to December, so talk to us in August if you can.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg px-2 py-1 font-serif text-lg font-bold transition duration-200 hover:text-brand-soft hover:underline hover:decoration-brand-soft/40 hover:underline-offset-4 dark:text-white dark:hover:text-red-300">
+              Can you make a milder version for children?
+              <i class="bi bi-plus-lg flex-none text-brand-soft transition group-open:rotate-45 dark:text-red-300"></i>
+            </summary>
+            <p class="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Yes. We can drop the chilli level to one or two, increase the jaggery, or
+              leave out garlic entirely. Tell us the age group and we will suggest.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg px-2 py-1 font-serif text-lg font-bold transition duration-200 hover:text-brand-soft hover:underline hover:decoration-brand-soft/40 hover:underline-offset-4 dark:text-white dark:hover:text-red-300">
+              Do you ship outside India?
+              <i class="bi bi-plus-lg flex-none text-brand-soft transition group-open:rotate-45 dark:text-red-300"></i>
+            </summary>
+            <p class="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              We ship to eleven countries. Food import rules differ, so we declare
+              conservatively and send the batch card with the parcel.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg px-2 py-1 font-serif text-lg font-bold transition duration-200 hover:text-brand-soft hover:underline hover:decoration-brand-soft/40 hover:underline-offset-4 dark:text-white dark:hover:text-red-300">
+              How long does a jar actually keep?
+              <i class="bi bi-plus-lg flex-none text-brand-soft transition group-open:rotate-45 dark:text-red-300"></i>
+            </summary>
+            <p class="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              Nine months for achar, a full year for murabba and honey preserves. Keep
+              the oil level above the masala and use a dry spoon every time.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+  <script>
+    // ================= FAQ: single panel open at a time =================
+    (function () {
+      const group = document.getElementById("faq");
+      if (!group) return;
+      group.addEventListener("toggle", (e) => {
+        const item = e.target;
+        if (!item.open) return;
+        group.querySelectorAll("details").forEach((d) => {
+          if (d !== item) d.open = false;
+        });
+      }, true);
+    })();
+  </script>
+</body>
+
+</html>

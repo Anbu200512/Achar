@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Achar &mdash; Specialty Pickle &amp; Homemade Preserve Store</title>
+  <meta name="description"
+    content="How to make aam ka achar at home, plus khatta-meetha murabba, achar paratha and everyday ways to serve pickle.">
+  <link rel="icon" href="images/logo.png">
+  <script src="tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#A31621',
+              deep: '#7A1218',
+              soft: '#D64530',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #a31621;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+  </style>
+  <script>
+    (function () {
+      const t = localStorage.getItem('theme') || 'light';
+      const html = document.documentElement;
+      html.setAttribute('data-theme', t);
+      html.classList.toggle('dark', t === 'dark');
+    })();
+  </script>
+</head>
+
+<body class="font-sans bg-white text-brand dark:bg-black dark:text-white">
+  <div id="navbar"></div>
+
+  <main>
+    <!-- ============ 1. HERO (full-bleed bg image) ============ -->
+    <section class="relative isolate flex min-h-[540px] items-center overflow-hidden bg-brand-deep sm:min-h-[620px] lg:min-h-[700px]">
+      <img src="images/recipe-aam-achar.jpg" alt="" aria-hidden="true" width="900" height="900"
+        class="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-deep/90 via-brand-deep/75 to-black/90"></div>
+
+      <div class="mx-auto w-full max-w-4xl px-5 py-28 text-center sm:px-6 sm:py-32 lg:py-36">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 font-sans text-[10px] font-bold uppercase tracking-[0.24em] text-amber-200 backdrop-blur">
+          <i class="bi bi-journal-text"></i> From our kitchen
+        </span>
+
+        <h1 class="mt-7 font-serif text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Recipes &amp;<br /><span class="italic text-amber-300">ways to eat it</span>
+        </h1>
+
+        <p class="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+          The exact method we use for aam ka achar, written out properly instead of the
+          way it gets shouted across a kitchen. With timings, oil ratios and the resting
+          schedule that decides whether a pickle is good.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4">
+          <a href="#featured"
+            class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand-deep transition hover:-translate-y-0.5 hover:bg-amber-300">
+            Read the main recipe <i class="bi bi-arrow-down"></i>
+          </a>
+          <a href="services.html"
+            class="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white/10">
+            Order the fermentation kit
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. FEATURED RECIPE ============ -->
+    <section class="scroll-mt-28 border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]" id="featured">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">Recipe 01</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              Ghar ka aam ka achar
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Two kilos of raw mango, four kilos of salt ratio, and thirty days of
+              patience. This is the same method Meera has used for twenty-two years.
+            </p>
+
+            <dl class="mt-8 grid grid-cols-2 gap-5">
+              <div>
+                <dt class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Prep</dt>
+                <dd class="mt-1 font-serif text-lg font-bold dark:text-white">40 min</dd>
+              </div>
+              <div>
+                <dt class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Ferment</dt>
+                <dd class="mt-1 font-serif text-lg font-bold dark:text-white">30 days</dd>
+              </div>
+              <div>
+                <dt class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Yield</dt>
+                <dd class="mt-1 font-serif text-lg font-bold dark:text-white">2 kg jar</dd>
+              </div>
+              <div>
+                <dt class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">Keep</dt>
+                <dd class="mt-1 font-serif text-lg font-bold dark:text-white">9 months</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="lg:col-span-7">
+            <ol class="divide-y divide-brand/15 border-y border-brand/15 dark:divide-white/10 dark:border-white/10">
+              <li class="flex gap-6 py-6">
+                <span class="font-serif text-sm font-bold text-brand-soft dark:text-red-300">01</span>
+                <div>
+                  <h3 class="font-serif text-lg font-bold dark:text-white">Wash, dry, then salt the mango</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                    Two kilos of raw mango, one cup of rock salt. Rub the salt in, leave it
+                    in the sun for three days until the pieces shrink and go translucent
+                    at the edges.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 py-6">
+                <span class="font-serif text-sm font-bold text-brand-soft dark:text-red-300">02</span>
+                <div>
+                  <h3 class="font-serif text-lg font-bold dark:text-white">Drain the brine completely</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                    This is the step everyone skips and it is the step that decides
+                    everything. Every drop of water left behind thins the masala.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 py-6">
+                <span class="font-serif text-sm font-bold text-brand-soft dark:text-red-300">03</span>
+                <div>
+                  <h3 class="font-serif text-lg font-bold dark:text-white">Make the masala</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                    200 g ghar-resham chilli, 50 g fennel, 30 g cumin seed, 20 g mustard
+                    seed, 20 g turmeric, 10 g hing. Coarsely ground, not powdered.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 py-6">
+                <span class="font-serif text-sm font-bold text-brand-soft dark:text-red-300">04</span>
+                <div>
+                  <h3 class="font-serif text-lg font-bold dark:text-white">Layer masala and oil</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                    A layer of masala, a layer of mango, a thin layer of mustard oil.
+                    Repeat to the top so the oil is the final layer and the masala never
+                    floats dry.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 py-6">
+                <span class="font-serif text-sm font-bold text-brand-soft dark:text-red-300">05</span>
+                <div>
+                  <h3 class="font-serif text-lg font-bold dark:text-white">Pour hot oil and press down</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                    Hot mustard oil releases the hing and carries the masala into the
+                    mango. A heavy weight on top keeps everything under the oil.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 py-6">
+                <span class="font-serif text-sm font-bold text-brand-soft dark:text-red-300">06</span>
+                <div>
+                  <h3 class="font-serif text-lg font-bold dark:text-white">Rest, then taste weekly</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                    Keep the jar in sunlight for a week, then in shade. From day ten,
+                    taste with a dry spoon. By day thirty the oil should have turned the
+                    colour of the masala.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. MORE RECIPES ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-28 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">More from the kitchen</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Six recipes worth keeping
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <img src="images/recipe-murabba.jpg" alt="Khatta meetha mango murabba" width="900" height="700" loading="lazy"
+              class="aspect-[9/7] w-full object-cover" />
+            <div class="flex flex-1 flex-col p-6">
+              <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-brand-soft dark:text-red-300">Preserve &middot; 45 min</p>
+              <h3 class="mt-2 font-serif text-xl font-bold dark:text-white">Khatta-meetha murabba</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Cook the syrup to the right stage and the mango will stay bright. The
+                spoon test that tells you when to stop.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <img src="images/recipe-paratha.jpg" alt="Achar paratha with dahi" width="900" height="700" loading="lazy"
+              class="aspect-[9/7] w-full object-cover" />
+            <div class="flex flex-1 flex-col p-6">
+              <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-brand-soft dark:text-red-300">Breakfast &middot; 30 min</p>
+              <h3 class="mt-2 font-serif text-xl font-bold dark:text-white">Achar paratha &amp; dahi</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Flaky parathas, thick curd and a spoonful of mango pickle. The winter
+                breakfast we grew up on.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <img src="images/pickle-spicy-lehsun.png" alt="Garlic chutney for dosa and chapati" width="900" height="900" loading="lazy"
+              class="aspect-[9/7] w-full object-cover" />
+            <div class="flex flex-1 flex-col p-6">
+              <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-brand-soft dark:text-red-300">Chutney &middot; 15 min</p>
+              <h3 class="mt-2 font-serif text-xl font-bold dark:text-white">Lehsun chutney for dosa</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Raw garlic, red chilli and sesame, ground coarse. Serve with hot dosas
+                and a little butter.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <img src="images/pickle-mixed-veg.jpg" alt="Mixed veg pickle with steamed rice" width="900" height="900" loading="lazy"
+              class="aspect-[9/7] w-full object-cover" />
+            <div class="flex flex-1 flex-col p-6">
+              <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-brand-soft dark:text-red-300">Rice &amp; dal &middot; 20 min</p>
+              <h3 class="mt-2 font-serif text-xl font-bold dark:text-white">Mixed veg with steam rice</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                A little pickle in the rice and a spoon in the dal. How every household
+                here eats it, every day.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <img src="images/pickle-amla-honey.png" alt="Amla honey preserve with warm milk" width="900" height="900" loading="lazy"
+              class="aspect-[9/7] w-full object-cover" />
+            <div class="flex flex-1 flex-col p-6">
+              <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-brand-soft dark:text-red-300">Winter &middot; 10 min</p>
+              <h3 class="mt-2 font-serif text-xl font-bold dark:text-white">Amla honey in warm milk</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                A spoonful in warm milk before bed. The oldest reason amla is kept in an
+                Indian kitchen at all.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-brand/15 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <img src="images/pickle-chutney-pudina.png" alt="Pudina chutney with sandwiches" width="900" height="900" loading="lazy"
+              class="aspect-[9/7] w-full object-cover" />
+            <div class="flex flex-1 flex-col p-6">
+              <p class="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-brand-soft dark:text-red-300">Quick &middot; 10 min</p>
+              <h3 class="mt-2 font-serif text-xl font-bold dark:text-white">Pudina chutney sandwich</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                Butter, cheese and a thin layer of mint chutney. The fastest way to use a
+                jar you forgot about.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. RATIOS & MISTAKES ============ -->
+    <section class="border-y border-brand/15 bg-brand/[0.03] py-16 sm:py-20 lg:py-24 dark:border-white/10 dark:bg-white/[0.02]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">The short version</span>
+            <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+              Ratios that never fail
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              Write these on the inside of your masala box. Everything else can be
+              adjusted to taste.
+            </p>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:col-span-7">
+            <div class="group rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <h3 class="font-serif text-lg font-bold dark:text-white">By weight</h3>
+              <ul class="mt-4 space-y-3 text-sm text-neutral-700 dark:text-neutral-300">
+                <li class="flex justify-between border-b border-brand/10 pb-2 dark:border-white/10"><span>Raw mango</span><span class="font-semibold">2 kg</span></li>
+                <li class="flex justify-between border-b border-brand/10 pb-2 dark:border-white/10"><span>Rock salt</span><span class="font-semibold">220 g</span></li>
+                <li class="flex justify-between border-b border-brand/10 pb-2 dark:border-white/10"><span>Mustard oil</span><span class="font-semibold">300 ml</span></li>
+                <li class="flex justify-between"><span>Masala</span><span class="font-semibold">250 g</span></li>
+              </ul>
+            </div>
+
+            <div class="group rounded-2xl border border-brand/15 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+              <h3 class="font-serif text-lg font-bold dark:text-white">Five common mistakes</h3>
+              <ul class="mt-4 space-y-3 text-sm text-neutral-700 dark:text-neutral-300">
+                <li class="flex gap-3 rounded-lg px-2 py-1 transition duration-200 hover:translate-x-1 hover:text-brand-soft dark:hover:text-red-300"><i class="bi bi-x-circle mt-0.5 text-brand-soft transition duration-200 dark:text-red-300"></i>Water left in the mango</li>
+                <li class="flex gap-3 rounded-lg px-2 py-1 transition duration-200 hover:translate-x-1 hover:text-brand-soft dark:hover:text-red-300"><i class="bi bi-x-circle mt-0.5 text-brand-soft transition duration-200 dark:text-red-300"></i>Masala ground to a powder</li>
+                <li class="flex gap-3 rounded-lg px-2 py-1 transition duration-200 hover:translate-x-1 hover:text-brand-soft dark:hover:text-red-300"><i class="bi bi-x-circle mt-0.5 text-brand-soft transition duration-200 dark:text-red-300"></i>Cold oil instead of hot</li>
+                <li class="flex gap-3 rounded-lg px-2 py-1 transition duration-200 hover:translate-x-1 hover:text-brand-soft dark:hover:text-red-300"><i class="bi bi-x-circle mt-0.5 text-brand-soft transition duration-200 dark:text-red-300"></i>Storing in a humid kitchen</li>
+                <li class="flex gap-3 rounded-lg px-2 py-1 transition duration-200 hover:translate-x-1 hover:text-brand-soft dark:hover:text-red-300"><i class="bi bi-x-circle mt-0.5 text-brand-soft transition duration-200 dark:text-red-300"></i>Wet spoon back into the jar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. SERVING SUGGESTIONS ============ -->
+    <section class="bg-white py-16 sm:py-20 lg:py-24 dark:bg-black">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-soft dark:text-red-300">At the table</span>
+          <h2 class="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl dark:text-white">
+            Ways to serve a jar
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-egg-fried text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+            <h3 class="mt-4 font-serif text-lg font-bold dark:text-white">With paratha</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">A spoon on hot paratha with a little ghee. Nothing else is needed.</p>
+          </div>
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-cup-hot text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+            <h3 class="mt-4 font-serif text-lg font-bold dark:text-white">In the dal</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Mixed with hot dal and rice. Improves plain dal more than any masala.</p>
+          </div>
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-sandwich text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+            <h3 class="mt-4 font-serif text-lg font-bold dark:text-white">In a sandwich</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Butter, cheese and a thin layer of chutney. Particularly good with pudina.</p>
+          </div>
+          <div class="group rounded-2xl border border-brand/15 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-brand-soft hover:shadow-2xl hover:shadow-brand/10 dark:border-white/10 dark:bg-neutral-900">
+            <i class="bi bi-cup-straw text-2xl text-brand-soft transition duration-300 group-hover:scale-125 group-hover:text-brand dark:text-red-300 dark:group-hover:text-red-400"></i>
+            <h3 class="mt-4 font-serif text-lg font-bold dark:text-white">In curd</h3>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Swirled into thick curd with a pinch of jaggery, as a raita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CLOSING CTA ============ -->
+    <section class="bg-brand py-16 text-white sm:py-20 lg:py-24 dark:bg-brand-deep">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center gap-8 text-center lg:flex-row lg:justify-between lg:text-start">
+          <div class="max-w-2xl">
+            <h2 class="font-serif text-3xl font-bold leading-tight sm:text-4xl">Rather start from a jar?</h2>
+            <p class="mt-4 text-base leading-relaxed text-white/90">
+              Every recipe on this page works with our pickle as a starting point, and
+              the masala pouch is on the shelf if you want to make your own batches.
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-3 lg:flex-none lg:flex-col">
+            <a href="products.html"
+              class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] text-brand transition hover:-translate-y-0.5 hover:bg-amber-300 hover:text-brand-deep">
+              Shop pickles <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="services.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 px-7 py-4 font-sans text-xs font-bold uppercase tracking-[0.14em] transition hover:bg-white/10">
+              Fermentation kits
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>

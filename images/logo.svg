@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Achar">
+  <title>Achar</title>
+  <rect width="64" height="64" rx="15" fill="#A31621"/>
+  <rect x="15.5" y="15.5" width="33" height="33" rx="9" fill="none" stroke="#E3B96A" stroke-width="1.4" opacity=".55"/>
+
+  <rect x="27" y="8.5" width="10" height="5.5" rx="2.75" fill="#E3B96A"/>
+  <rect x="17.5" y="13" width="29" height="7.5" rx="3.75" fill="#C08B3E"/>
+  <rect x="20" y="15.2" width="24" height="2" rx="1" fill="#E3B96A" opacity=".7"/>
+
+  <rect x="18.5" y="21.5" width="27" height="32" rx="7.5" fill="#FCF7ED"/>
+  <path d="M21.5 31h21v15.5a4.5 4.5 0 0 1-4.5 4.5h-12a4.5 4.5 0 0 1-4.5-4.5Z" fill="#E9A73C"/>
+  <path d="M21.5 31h21v3.5h-21Z" fill="#F7CE6B"/>
+  <circle cx="26" cy="40" r="1.5" fill="#2E2418"/>
+  <circle cx="38" cy="44.5" r="1.5" fill="#2E2418"/>
+  <circle cx="31" cy="47.5" r="1.5" fill="#2E2418"/>
+  <path d="M23 27.5c1.6-2.4 4-2.4 5.6 0" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/>
+
+  <rect x="23.5" y="34.5" width="17" height="11" rx="2.5" fill="#FCF7ED" stroke="#C08B3E" stroke-width="1.2"/>
+  <text x="32" y="43.6" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" font-weight="700" fill="#A31621">A</text>
+
+  <path d="M47.5 25.5c3.6-3.4 8.5-1.6 8.5-1.6s.6 5.2-4 7.2c-2.6 1.1-4.5-.4-4.5-.4Z" fill="#5C8A3C"/>
+</svg>

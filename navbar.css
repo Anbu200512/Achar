@@ -1,0 +1,231 @@
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
+.nav-active {
+  color: #D64530;
+  position: relative;
+}
+
+#navLinks a.nav-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: #D64530;
+  border-radius: 2px;
+}
+
+#homeDropdownMenu li a.nav-active::after,
+#mobileMenu li a.nav-active::after {
+  display: none;
+}
+
+[data-theme="dark"] #mainNavbar,
+[data-theme="dark"] #mobileMenu,
+[data-theme="dark"] #homeDropdownMenu {
+  background-color: #000000 !important;
+  border-color: rgba(211, 69, 48, 0.35) !important;
+}
+
+[data-theme="dark"] #homeDropdownMenu a:hover,
+[data-theme="dark"] #mobileMenu a:hover {
+  background-color: #D64530 !important;
+  color: #000000 !important;
+}
+
+[data-theme="dark"] .nav-active {
+  color: #E8735F !important;
+}
+
+[data-theme="dark"] #navLinks a.nav-active::after {
+  background-color: #E8735F !important;
+}
+
+@media (max-width: 1024px) {
+  #navLinks {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 820px) {
+  #centerLinksWrapper {
+    display: none !important;
+  }
+}
+
+@media (min-width: 821px) {
+  #hamburgerBtn {
+    display: none !important;
+  }
+
+  #mobileMenuOverlay,
+  #mobileMenu {
+    display: none !important;
+  }
+}
+
+.mobile-menu-open {
+  overflow: hidden;
+}
+
+#mobileMenu.active {
+  transform: translateX(0);
+}
+
+#mobileMenuOverlay.active {
+  display: block !important;
+}
+
+/* Animation for mobile dropdown */
+#mobileDropdownMenu {
+  transition: max-height 0.3s ease-out;
+}
+
+#mobileDropdownMenu.show {
+  display: block !important;
+  animation: slideDown 0.3s ease-out;
+}
+
+#hamburgerBtn i {
+  color: #A31621;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 821px) {
+  #centerLinksWrapper {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 821px) {
+  #navLinks a.nav-active::after {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+
+  #theme-toggle i {
+    font-size: 15px;
+  }
+
+  #hamburgerBtn i {
+    font-size: 20px;
+    color: #A31621;
+  }
+
+  #closeMenuBtn {
+    font-size: 20px;
+  }
+
+  #rightButtons {
+    gap: 1rem;
+  }
+}
+
+[data-theme="dark"] #homeDropdownMenu a,
+[data-theme="dark"] #mainNavbar i,
+[data-theme="dark"] #mainNavbar button,
+[data-theme="dark"] #mainNavbar a,
+[data-theme="dark"] #mobileMenu i,
+[data-theme="dark"] #mobileMenu a,
+[data-theme="dark"] #mobileMenu button {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] #mainNavbar a.nav-active,
+[data-theme="dark"] #mobileMenu a.nav-active {
+  color: #E8735F !important;
+}
+
+/* ---------- Hover effects (shared across all pages) ---------- */
+
+#navLinks > li > a {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+#navLinks > li > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #D64530;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.28s ease;
+}
+
+#navLinks > li > a:hover::before,
+#navLinks > li > a:focus-visible::before {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+[data-theme="dark"] #navLinks > li > a::before {
+  background-color: #E8735F;
+}
+
+#mainNavbar a[href="index.html"] img,
+#mainNavbar a[href="home2.html"] img,
+#mobileMenu a[href="index.html"] img,
+#mobileMenu a[href="home2.html"] img,
+footer a img {
+  transition: transform 0.3s ease;
+}
+
+#mainNavbar a:hover img,
+#mobileMenu a:hover img,
+footer a:hover img {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+#theme-toggle:hover,
+#rtlToggle:hover,
+#hamburgerBtn:hover,
+#mobile-theme-toggle:hover,
+#mobile-rtlToggle:hover {
+  background-color: rgba(163, 22, 33, 0.1);
+  transform: translateY(-2px);
+}
+
+#theme-toggle,
+#rtlToggle,
+#hamburgerBtn,
+#mobile-theme-toggle,
+#mobile-rtlToggle {
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+[data-theme="dark"] #theme-toggle:hover,
+[data-theme="dark"] #rtlToggle:hover,
+[data-theme="dark"] #hamburgerBtn:hover,
+[data-theme="dark"] #mobile-theme-toggle:hover,
+[data-theme="dark"] #mobile-rtlToggle:hover {
+  background-color: rgba(232, 115, 95, 0.15);
+}
