@@ -209,8 +209,9 @@ footer a:hover img {
 #rtlToggle:hover,
 #hamburgerBtn:hover,
 #mobile-theme-toggle:hover,
-#mobile-rtlToggle:hover {
-  background-color: rgba(163, 22, 33, 0.1);
+#mobile-rtl-toggle:hover {
+  background-color: #A31621;
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
@@ -218,14 +219,16 @@ footer a:hover img {
 #rtlToggle,
 #hamburgerBtn,
 #mobile-theme-toggle,
-#mobile-rtlToggle {
-  transition: background-color 0.25s ease, transform 0.25s ease;
+#mobile-rtl-toggle {
+  transition: background-color 0.25s ease, color 0.25s ease,
+    transform 0.25s ease;
 }
 
 [data-theme="dark"] #theme-toggle:hover,
 [data-theme="dark"] #rtlToggle:hover,
 [data-theme="dark"] #hamburgerBtn:hover,
 [data-theme="dark"] #mobile-theme-toggle:hover,
-[data-theme="dark"] #mobile-rtlToggle:hover {
+[data-theme="dark"] #mobile-rtl-toggle:hover {
   background-color: rgba(232, 115, 95, 0.15);
+  color: #FFFFFF;
 }
